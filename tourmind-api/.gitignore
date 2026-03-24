@@ -6,3 +6,4 @@ node_modules
 *.log
 server-start.out.log
 server-start.err.log
+.github/workflows/
