@@ -1,0 +1,68 @@
+{
+  "services": [
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f100",
+      "name": "Kerala Backwater Stay",
+      "location": "Alleppey, Kerala",
+      "priceRange": "INR 3500-5500/night",
+      "type": "hotel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f101",
+      "name": "Goa Beach Resort",
+      "location": "Calangute, Goa",
+      "priceRange": "INR 4200-8200/night",
+      "type": "hotel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f102",
+      "name": "Himalayan Valley Lodge",
+      "location": "Manali, Himachal Pradesh",
+      "priceRange": "INR 3000-6500/night",
+      "type": "hotel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f103",
+      "name": "Heritage Jaipur Haveli",
+      "location": "Jaipur, Rajasthan",
+      "priceRange": "INR 2800-7200/night",
+      "type": "hotel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f104",
+      "name": "Delhi to Agra Day Transfer",
+      "location": "Delhi - Agra",
+      "priceRange": "INR 1800-4500/vehicle",
+      "type": "travel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f105",
+      "name": "North East Explorer Transport",
+      "location": "Guwahati - Shillong - Cherrapunji",
+      "priceRange": "INR 3500-9000/day",
+      "type": "travel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f106",
+      "name": "Temple Circuit Coach",
+      "location": "Madurai - Rameswaram",
+      "priceRange": "INR 1200-2400/seat",
+      "type": "travel",
+      "contactInfo": "TourMind Internal Operations"
+    },
+    {
+      "id": "d2e3f8c0-fd72-47a6-9368-3d9f95f9f107",
+      "name": "Sikkim Mountain Cabs",
+      "location": "Gangtok - Tsomgo - Nathula",
+      "priceRange": "INR 2600-6200/day",
+      "type": "travel",
+      "contactInfo": "TourMind Internal Operations"
+    }
+  ]
+}

@@ -1,0 +1,4150 @@
+{
+  "states": [
+    {
+      "code": "AP",
+      "slug": "andhra-pradesh",
+      "name": "Andhra Pradesh",
+      "places": [
+        {
+          "id": "tirupati-balaji-temple-ap",
+          "name": "Tirupati Balaji Temple",
+          "category": "Temple",
+          "shortDescription": "Tirupati Balaji Temple is a popular temple destination in Andhra Pradesh.",
+          "fullDescription": "Tirupati Balaji Temple is one of the most visited temple attractions in Andhra Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Araku Valley",
+            "Borra Caves",
+            "RK Beach, Visakhapatnam"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 15.6929,
+            "lng": 79.98
+          }
+        },
+        {
+          "id": "araku-valley-ap",
+          "name": "Araku Valley",
+          "category": "Hill",
+          "shortDescription": "Araku Valley is a popular hill destination in Andhra Pradesh.",
+          "fullDescription": "Araku Valley is one of the most visited hill attractions in Andhra Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Tirupati Balaji Temple",
+            "Borra Caves",
+            "RK Beach, Visakhapatnam"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 15.8329,
+            "lng": 79.58
+          }
+        },
+        {
+          "id": "borra-caves-ap",
+          "name": "Borra Caves",
+          "category": "Nature",
+          "shortDescription": "Borra Caves is a popular nature destination in Andhra Pradesh.",
+          "fullDescription": "Borra Caves is one of the most visited nature attractions in Andhra Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tirupati Balaji Temple",
+            "Araku Valley",
+            "RK Beach, Visakhapatnam"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 15.9929,
+            "lng": 79.86
+          }
+        },
+        {
+          "id": "rk-beach-visakhapatnam-ap",
+          "name": "RK Beach, Visakhapatnam",
+          "category": "Beach",
+          "shortDescription": "RK Beach, Visakhapatnam is a popular beach destination in Andhra Pradesh.",
+          "fullDescription": "RK Beach, Visakhapatnam is one of the most visited beach attractions in Andhra Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Tirupati Balaji Temple",
+            "Araku Valley",
+            "Borra Caves"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 16.1329,
+            "lng": 79.52
+          }
+        },
+        {
+          "id": "gandikota-ap",
+          "name": "Gandikota",
+          "category": "Historical",
+          "shortDescription": "Gandikota is a popular historical destination in Andhra Pradesh.",
+          "fullDescription": "Gandikota is one of the most visited historical attractions in Andhra Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tirupati Balaji Temple",
+            "Araku Valley",
+            "Borra Caves"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 15.9129,
+            "lng": 79.78
+          }
+        }
+      ]
+    },
+    {
+      "code": "AR",
+      "slug": "arunachal-pradesh",
+      "name": "Arunachal Pradesh",
+      "places": [
+        {
+          "id": "tawang-monastery-ar",
+          "name": "Tawang Monastery",
+          "category": "Historical",
+          "shortDescription": "Tawang Monastery is a popular historical destination in Arunachal Pradesh.",
+          "fullDescription": "Tawang Monastery is one of the most visited historical attractions in Arunachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Ziro Valley",
+            "Namdapha National Park",
+            "Sela Pass"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 27.998,
+            "lng": 94.9678
+          }
+        },
+        {
+          "id": "ziro-valley-ar",
+          "name": "Ziro Valley",
+          "category": "Hill",
+          "shortDescription": "Ziro Valley is a popular hill destination in Arunachal Pradesh.",
+          "fullDescription": "Ziro Valley is one of the most visited hill attractions in Arunachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Tawang Monastery",
+            "Namdapha National Park",
+            "Sela Pass"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 28.138,
+            "lng": 94.5678
+          }
+        },
+        {
+          "id": "namdapha-national-park-ar",
+          "name": "Namdapha National Park",
+          "category": "Wildlife",
+          "shortDescription": "Namdapha National Park is a popular wildlife destination in Arunachal Pradesh.",
+          "fullDescription": "Namdapha National Park is one of the most visited wildlife attractions in Arunachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Tawang Monastery",
+            "Ziro Valley",
+            "Sela Pass"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 28.298,
+            "lng": 94.8478
+          }
+        },
+        {
+          "id": "sela-pass-ar",
+          "name": "Sela Pass",
+          "category": "Nature",
+          "shortDescription": "Sela Pass is a popular nature destination in Arunachal Pradesh.",
+          "fullDescription": "Sela Pass is one of the most visited nature attractions in Arunachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tawang Monastery",
+            "Ziro Valley",
+            "Namdapha National Park"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 28.438,
+            "lng": 94.5078
+          }
+        },
+        {
+          "id": "bomdila-ar",
+          "name": "Bomdila",
+          "category": "Hill",
+          "shortDescription": "Bomdila is a popular hill destination in Arunachal Pradesh.",
+          "fullDescription": "Bomdila is one of the most visited hill attractions in Arunachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Tawang Monastery",
+            "Ziro Valley",
+            "Namdapha National Park"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 28.218,
+            "lng": 94.7678
+          }
+        }
+      ]
+    },
+    {
+      "code": "AS",
+      "slug": "assam",
+      "name": "Assam",
+      "places": [
+        {
+          "id": "kaziranga-national-park-as",
+          "name": "Kaziranga National Park",
+          "category": "Wildlife",
+          "shortDescription": "Kaziranga National Park is a popular wildlife destination in Assam.",
+          "fullDescription": "Kaziranga National Park is one of the most visited wildlife attractions in Assam. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Kamakhya Temple",
+            "Majuli",
+            "Manas National Park"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 25.9806,
+            "lng": 93.1776
+          }
+        },
+        {
+          "id": "kamakhya-temple-as",
+          "name": "Kamakhya Temple",
+          "category": "Temple",
+          "shortDescription": "Kamakhya Temple is a popular temple destination in Assam.",
+          "fullDescription": "Kamakhya Temple is one of the most visited temple attractions in Assam. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Kaziranga National Park",
+            "Majuli",
+            "Manas National Park"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 26.1206,
+            "lng": 92.7776
+          }
+        },
+        {
+          "id": "majuli-as",
+          "name": "Majuli",
+          "category": "Nature",
+          "shortDescription": "Majuli is a popular nature destination in Assam.",
+          "fullDescription": "Majuli is one of the most visited nature attractions in Assam. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Kaziranga National Park",
+            "Kamakhya Temple",
+            "Manas National Park"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 26.2806,
+            "lng": 93.0576
+          }
+        },
+        {
+          "id": "manas-national-park-as",
+          "name": "Manas National Park",
+          "category": "Wildlife",
+          "shortDescription": "Manas National Park is a popular wildlife destination in Assam.",
+          "fullDescription": "Manas National Park is one of the most visited wildlife attractions in Assam. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Kaziranga National Park",
+            "Kamakhya Temple",
+            "Majuli"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 26.4206,
+            "lng": 92.7176
+          }
+        },
+        {
+          "id": "sivasagar-as",
+          "name": "Sivasagar",
+          "category": "Historical",
+          "shortDescription": "Sivasagar is a popular historical destination in Assam.",
+          "fullDescription": "Sivasagar is one of the most visited historical attractions in Assam. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Kaziranga National Park",
+            "Kamakhya Temple",
+            "Majuli"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 26.2006,
+            "lng": 92.9776
+          }
+        }
+      ]
+    },
+    {
+      "code": "BR",
+      "slug": "bihar",
+      "name": "Bihar",
+      "places": [
+        {
+          "id": "mahabodhi-temple-bodh-gaya-br",
+          "name": "Mahabodhi Temple, Bodh Gaya",
+          "category": "Temple",
+          "shortDescription": "Mahabodhi Temple, Bodh Gaya is a popular temple destination in Bihar.",
+          "fullDescription": "Mahabodhi Temple, Bodh Gaya is one of the most visited temple attractions in Bihar. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Nalanda Ruins",
+            "Rajgir",
+            "Vikramshila"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 24.8761,
+            "lng": 85.5531
+          }
+        },
+        {
+          "id": "nalanda-ruins-br",
+          "name": "Nalanda Ruins",
+          "category": "Historical",
+          "shortDescription": "Nalanda Ruins is a popular historical destination in Bihar.",
+          "fullDescription": "Nalanda Ruins is one of the most visited historical attractions in Bihar. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Mahabodhi Temple, Bodh Gaya",
+            "Rajgir",
+            "Vikramshila"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 25.0161,
+            "lng": 85.1531
+          }
+        },
+        {
+          "id": "rajgir-br",
+          "name": "Rajgir",
+          "category": "Historical",
+          "shortDescription": "Rajgir is a popular historical destination in Bihar.",
+          "fullDescription": "Rajgir is one of the most visited historical attractions in Bihar. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Mahabodhi Temple, Bodh Gaya",
+            "Nalanda Ruins",
+            "Vikramshila"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 25.1761,
+            "lng": 85.4331
+          }
+        },
+        {
+          "id": "vikramshila-br",
+          "name": "Vikramshila",
+          "category": "Historical",
+          "shortDescription": "Vikramshila is a popular historical destination in Bihar.",
+          "fullDescription": "Vikramshila is one of the most visited historical attractions in Bihar. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Mahabodhi Temple, Bodh Gaya",
+            "Nalanda Ruins",
+            "Rajgir"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 25.3161,
+            "lng": 85.0931
+          }
+        },
+        {
+          "id": "patna-sahib-br",
+          "name": "Patna Sahib",
+          "category": "Temple",
+          "shortDescription": "Patna Sahib is a popular temple destination in Bihar.",
+          "fullDescription": "Patna Sahib is one of the most visited temple attractions in Bihar. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Mahabodhi Temple, Bodh Gaya",
+            "Nalanda Ruins",
+            "Rajgir"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 25.0961,
+            "lng": 85.3531
+          }
+        }
+      ]
+    },
+    {
+      "code": "CG",
+      "slug": "chhattisgarh",
+      "name": "Chhattisgarh",
+      "places": [
+        {
+          "id": "chitrakote-falls-cg",
+          "name": "Chitrakote Falls",
+          "category": "Nature",
+          "shortDescription": "Chitrakote Falls is a popular nature destination in Chhattisgarh.",
+          "fullDescription": "Chitrakote Falls is one of the most visited nature attractions in Chhattisgarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Kanger Valley National Park",
+            "Tirathgarh Falls",
+            "Barnawapara Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 21.0587,
+            "lng": 82.1061
+          }
+        },
+        {
+          "id": "kanger-valley-national-park-cg",
+          "name": "Kanger Valley National Park",
+          "category": "Wildlife",
+          "shortDescription": "Kanger Valley National Park is a popular wildlife destination in Chhattisgarh.",
+          "fullDescription": "Kanger Valley National Park is one of the most visited wildlife attractions in Chhattisgarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Chitrakote Falls",
+            "Tirathgarh Falls",
+            "Barnawapara Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 21.1987,
+            "lng": 81.7061
+          }
+        },
+        {
+          "id": "tirathgarh-falls-cg",
+          "name": "Tirathgarh Falls",
+          "category": "Nature",
+          "shortDescription": "Tirathgarh Falls is a popular nature destination in Chhattisgarh.",
+          "fullDescription": "Tirathgarh Falls is one of the most visited nature attractions in Chhattisgarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Chitrakote Falls",
+            "Kanger Valley National Park",
+            "Barnawapara Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 21.3587,
+            "lng": 81.9861
+          }
+        },
+        {
+          "id": "barnawapara-wildlife-sanctuary-cg",
+          "name": "Barnawapara Wildlife Sanctuary",
+          "category": "Wildlife",
+          "shortDescription": "Barnawapara Wildlife Sanctuary is a popular wildlife destination in Chhattisgarh.",
+          "fullDescription": "Barnawapara Wildlife Sanctuary is one of the most visited wildlife attractions in Chhattisgarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Chitrakote Falls",
+            "Kanger Valley National Park",
+            "Tirathgarh Falls"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 21.4987,
+            "lng": 81.6461
+          }
+        },
+        {
+          "id": "sirpur-cg",
+          "name": "Sirpur",
+          "category": "Historical",
+          "shortDescription": "Sirpur is a popular historical destination in Chhattisgarh.",
+          "fullDescription": "Sirpur is one of the most visited historical attractions in Chhattisgarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Chitrakote Falls",
+            "Kanger Valley National Park",
+            "Tirathgarh Falls"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 21.2787,
+            "lng": 81.9061
+          }
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "slug": "goa",
+      "name": "Goa",
+      "places": [
+        {
+          "id": "calangute-beach-ga",
+          "name": "Calangute Beach",
+          "category": "Beach",
+          "shortDescription": "Calangute Beach is a popular beach destination in Goa.",
+          "fullDescription": "Calangute Beach is one of the most visited beach attractions in Goa. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Baga Beach",
+            "Dudhsagar Falls",
+            "Fort Aguada"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 15.0793,
+            "lng": 74.364
+          }
+        },
+        {
+          "id": "baga-beach-ga",
+          "name": "Baga Beach",
+          "category": "Beach",
+          "shortDescription": "Baga Beach is a popular beach destination in Goa.",
+          "fullDescription": "Baga Beach is one of the most visited beach attractions in Goa. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Calangute Beach",
+            "Dudhsagar Falls",
+            "Fort Aguada"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 15.2193,
+            "lng": 73.964
+          }
+        },
+        {
+          "id": "dudhsagar-falls-ga",
+          "name": "Dudhsagar Falls",
+          "category": "Nature",
+          "shortDescription": "Dudhsagar Falls is a popular nature destination in Goa.",
+          "fullDescription": "Dudhsagar Falls is one of the most visited nature attractions in Goa. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Calangute Beach",
+            "Baga Beach",
+            "Fort Aguada"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 15.3793,
+            "lng": 74.244
+          }
+        },
+        {
+          "id": "fort-aguada-ga",
+          "name": "Fort Aguada",
+          "category": "Historical",
+          "shortDescription": "Fort Aguada is a popular historical destination in Goa.",
+          "fullDescription": "Fort Aguada is one of the most visited historical attractions in Goa. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Calangute Beach",
+            "Baga Beach",
+            "Dudhsagar Falls"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 15.5193,
+            "lng": 73.904
+          }
+        },
+        {
+          "id": "old-goa-churches-ga",
+          "name": "Old Goa Churches",
+          "category": "Historical",
+          "shortDescription": "Old Goa Churches is a popular historical destination in Goa.",
+          "fullDescription": "Old Goa Churches is one of the most visited historical attractions in Goa. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Calangute Beach",
+            "Baga Beach",
+            "Dudhsagar Falls"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 15.2993,
+            "lng": 74.164
+          }
+        }
+      ]
+    },
+    {
+      "code": "GJ",
+      "slug": "gujarat",
+      "name": "Gujarat",
+      "places": [
+        {
+          "id": "statue-of-unity-gj",
+          "name": "Statue of Unity",
+          "category": "Historical",
+          "shortDescription": "Statue of Unity is a popular historical destination in Gujarat.",
+          "fullDescription": "Statue of Unity is one of the most visited historical attractions in Gujarat. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Gir National Park",
+            "Rann of Kutch",
+            "Somnath Temple"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 22.0387,
+            "lng": 71.4324
+          }
+        },
+        {
+          "id": "gir-national-park-gj",
+          "name": "Gir National Park",
+          "category": "Wildlife",
+          "shortDescription": "Gir National Park is a popular wildlife destination in Gujarat.",
+          "fullDescription": "Gir National Park is one of the most visited wildlife attractions in Gujarat. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Statue of Unity",
+            "Rann of Kutch",
+            "Somnath Temple"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 22.1787,
+            "lng": 71.0324
+          }
+        },
+        {
+          "id": "rann-of-kutch-gj",
+          "name": "Rann of Kutch",
+          "category": "Desert",
+          "shortDescription": "Rann of Kutch is a popular desert destination in Gujarat.",
+          "fullDescription": "Rann of Kutch is one of the most visited desert attractions in Gujarat. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Statue of Unity",
+            "Gir National Park",
+            "Somnath Temple"
+          ],
+          "travelTips": [
+            "Carry hats, sunglasses, and hydration support.",
+            "Plan sunrise/sunset slots for best weather.",
+            "Confirm transport availability for remote stretches."
+          ],
+          "coordinates": {
+            "lat": 22.3387,
+            "lng": 71.3124
+          }
+        },
+        {
+          "id": "somnath-temple-gj",
+          "name": "Somnath Temple",
+          "category": "Temple",
+          "shortDescription": "Somnath Temple is a popular temple destination in Gujarat.",
+          "fullDescription": "Somnath Temple is one of the most visited temple attractions in Gujarat. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Statue of Unity",
+            "Gir National Park",
+            "Rann of Kutch"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 22.4787,
+            "lng": 70.9724
+          }
+        },
+        {
+          "id": "dwarka-gj",
+          "name": "Dwarka",
+          "category": "Temple",
+          "shortDescription": "Dwarka is a popular temple destination in Gujarat.",
+          "fullDescription": "Dwarka is one of the most visited temple attractions in Gujarat. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Statue of Unity",
+            "Gir National Park",
+            "Rann of Kutch"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 22.2587,
+            "lng": 71.2324
+          }
+        }
+      ]
+    },
+    {
+      "code": "HR",
+      "slug": "haryana",
+      "name": "Haryana",
+      "places": [
+        {
+          "id": "brahma-sarovar-kurukshetra-hr",
+          "name": "Brahma Sarovar, Kurukshetra",
+          "category": "Temple",
+          "shortDescription": "Brahma Sarovar, Kurukshetra is a popular temple destination in Haryana.",
+          "fullDescription": "Brahma Sarovar, Kurukshetra is one of the most visited temple attractions in Haryana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Sultanpur National Park",
+            "Pinjore Gardens",
+            "Morni Hills"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 28.8388,
+            "lng": 76.3256
+          }
+        },
+        {
+          "id": "sultanpur-national-park-hr",
+          "name": "Sultanpur National Park",
+          "category": "Wildlife",
+          "shortDescription": "Sultanpur National Park is a popular wildlife destination in Haryana.",
+          "fullDescription": "Sultanpur National Park is one of the most visited wildlife attractions in Haryana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Brahma Sarovar, Kurukshetra",
+            "Pinjore Gardens",
+            "Morni Hills"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 28.9788,
+            "lng": 75.9256
+          }
+        },
+        {
+          "id": "pinjore-gardens-hr",
+          "name": "Pinjore Gardens",
+          "category": "Historical",
+          "shortDescription": "Pinjore Gardens is a popular historical destination in Haryana.",
+          "fullDescription": "Pinjore Gardens is one of the most visited historical attractions in Haryana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Brahma Sarovar, Kurukshetra",
+            "Sultanpur National Park",
+            "Morni Hills"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 29.1388,
+            "lng": 76.2056
+          }
+        },
+        {
+          "id": "morni-hills-hr",
+          "name": "Morni Hills",
+          "category": "Hill",
+          "shortDescription": "Morni Hills is a popular hill destination in Haryana.",
+          "fullDescription": "Morni Hills is one of the most visited hill attractions in Haryana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Brahma Sarovar, Kurukshetra",
+            "Sultanpur National Park",
+            "Pinjore Gardens"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 29.2788,
+            "lng": 75.8656
+          }
+        },
+        {
+          "id": "kingdom-of-dreams-hr",
+          "name": "Kingdom of Dreams",
+          "category": "City",
+          "shortDescription": "Kingdom of Dreams is a popular city destination in Haryana.",
+          "fullDescription": "Kingdom of Dreams is one of the most visited city attractions in Haryana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Brahma Sarovar, Kurukshetra",
+            "Sultanpur National Park",
+            "Pinjore Gardens"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 29.0588,
+            "lng": 76.1256
+          }
+        }
+      ]
+    },
+    {
+      "code": "HP",
+      "slug": "himachal-pradesh",
+      "name": "Himachal Pradesh",
+      "places": [
+        {
+          "id": "manali-hp",
+          "name": "Manali",
+          "category": "Hill",
+          "shortDescription": "Manali is a popular hill destination in Himachal Pradesh.",
+          "fullDescription": "Manali is one of the most visited hill attractions in Himachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Shimla",
+            "Dharamshala",
+            "Spiti Valley"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 30.8848,
+            "lng": 77.4134
+          }
+        },
+        {
+          "id": "shimla-hp",
+          "name": "Shimla",
+          "category": "Hill",
+          "shortDescription": "Shimla is a popular hill destination in Himachal Pradesh.",
+          "fullDescription": "Shimla is one of the most visited hill attractions in Himachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Manali",
+            "Dharamshala",
+            "Spiti Valley"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 31.0248,
+            "lng": 77.0134
+          }
+        },
+        {
+          "id": "dharamshala-hp",
+          "name": "Dharamshala",
+          "category": "Hill",
+          "shortDescription": "Dharamshala is a popular hill destination in Himachal Pradesh.",
+          "fullDescription": "Dharamshala is one of the most visited hill attractions in Himachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Manali",
+            "Shimla",
+            "Spiti Valley"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 31.1848,
+            "lng": 77.2934
+          }
+        },
+        {
+          "id": "spiti-valley-hp",
+          "name": "Spiti Valley",
+          "category": "Nature",
+          "shortDescription": "Spiti Valley is a popular nature destination in Himachal Pradesh.",
+          "fullDescription": "Spiti Valley is one of the most visited nature attractions in Himachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Manali",
+            "Shimla",
+            "Dharamshala"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 31.3248,
+            "lng": 76.9534
+          }
+        },
+        {
+          "id": "kasol-hp",
+          "name": "Kasol",
+          "category": "Hill",
+          "shortDescription": "Kasol is a popular hill destination in Himachal Pradesh.",
+          "fullDescription": "Kasol is one of the most visited hill attractions in Himachal Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Manali",
+            "Shimla",
+            "Dharamshala"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 31.1048,
+            "lng": 77.2134
+          }
+        }
+      ]
+    },
+    {
+      "code": "JH",
+      "slug": "jharkhand",
+      "name": "Jharkhand",
+      "places": [
+        {
+          "id": "hundru-falls-jh",
+          "name": "Hundru Falls",
+          "category": "Nature",
+          "shortDescription": "Hundru Falls is a popular nature destination in Jharkhand.",
+          "fullDescription": "Hundru Falls is one of the most visited nature attractions in Jharkhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Betla National Park",
+            "Netarhat",
+            "Baidyanath Temple, Deoghar"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 23.3902,
+            "lng": 85.5199
+          }
+        },
+        {
+          "id": "betla-national-park-jh",
+          "name": "Betla National Park",
+          "category": "Wildlife",
+          "shortDescription": "Betla National Park is a popular wildlife destination in Jharkhand.",
+          "fullDescription": "Betla National Park is one of the most visited wildlife attractions in Jharkhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Hundru Falls",
+            "Netarhat",
+            "Baidyanath Temple, Deoghar"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 23.5302,
+            "lng": 85.1199
+          }
+        },
+        {
+          "id": "netarhat-jh",
+          "name": "Netarhat",
+          "category": "Hill",
+          "shortDescription": "Netarhat is a popular hill destination in Jharkhand.",
+          "fullDescription": "Netarhat is one of the most visited hill attractions in Jharkhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Hundru Falls",
+            "Betla National Park",
+            "Baidyanath Temple, Deoghar"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 23.6902,
+            "lng": 85.3999
+          }
+        },
+        {
+          "id": "baidyanath-temple-deoghar-jh",
+          "name": "Baidyanath Temple, Deoghar",
+          "category": "Temple",
+          "shortDescription": "Baidyanath Temple, Deoghar is a popular temple destination in Jharkhand.",
+          "fullDescription": "Baidyanath Temple, Deoghar is one of the most visited temple attractions in Jharkhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Hundru Falls",
+            "Betla National Park",
+            "Netarhat"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 23.8302,
+            "lng": 85.0599
+          }
+        },
+        {
+          "id": "dassam-falls-jh",
+          "name": "Dassam Falls",
+          "category": "Nature",
+          "shortDescription": "Dassam Falls is a popular nature destination in Jharkhand.",
+          "fullDescription": "Dassam Falls is one of the most visited nature attractions in Jharkhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Hundru Falls",
+            "Betla National Park",
+            "Netarhat"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 23.6102,
+            "lng": 85.3199
+          }
+        }
+      ]
+    },
+    {
+      "code": "KA",
+      "slug": "karnataka",
+      "name": "Karnataka",
+      "places": [
+        {
+          "id": "hampi-ka",
+          "name": "Hampi",
+          "category": "Historical",
+          "shortDescription": "Hampi is a popular historical destination in Karnataka.",
+          "fullDescription": "Hampi is one of the most visited historical attractions in Karnataka. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Coorg",
+            "Mysore Palace",
+            "Gokarna Beach"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 15.0973,
+            "lng": 75.9539
+          }
+        },
+        {
+          "id": "coorg-ka",
+          "name": "Coorg",
+          "category": "Hill",
+          "shortDescription": "Coorg is a popular hill destination in Karnataka.",
+          "fullDescription": "Coorg is one of the most visited hill attractions in Karnataka. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Hampi",
+            "Mysore Palace",
+            "Gokarna Beach"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 15.2373,
+            "lng": 75.5539
+          }
+        },
+        {
+          "id": "mysore-palace-ka",
+          "name": "Mysore Palace",
+          "category": "Historical",
+          "shortDescription": "Mysore Palace is a popular historical destination in Karnataka.",
+          "fullDescription": "Mysore Palace is one of the most visited historical attractions in Karnataka. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Hampi",
+            "Coorg",
+            "Gokarna Beach"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 15.3973,
+            "lng": 75.8339
+          }
+        },
+        {
+          "id": "gokarna-beach-ka",
+          "name": "Gokarna Beach",
+          "category": "Beach",
+          "shortDescription": "Gokarna Beach is a popular beach destination in Karnataka.",
+          "fullDescription": "Gokarna Beach is one of the most visited beach attractions in Karnataka. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Hampi",
+            "Coorg",
+            "Mysore Palace"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 15.5373,
+            "lng": 75.4939
+          }
+        },
+        {
+          "id": "jog-falls-ka",
+          "name": "Jog Falls",
+          "category": "Nature",
+          "shortDescription": "Jog Falls is a popular nature destination in Karnataka.",
+          "fullDescription": "Jog Falls is one of the most visited nature attractions in Karnataka. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Hampi",
+            "Coorg",
+            "Mysore Palace"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 15.3173,
+            "lng": 75.7539
+          }
+        }
+      ]
+    },
+    {
+      "code": "KL",
+      "slug": "kerala",
+      "name": "Kerala",
+      "places": [
+        {
+          "id": "munnar-kl",
+          "name": "Munnar",
+          "category": "Hill",
+          "shortDescription": "Munnar is a popular hill destination in Kerala.",
+          "fullDescription": "Munnar is one of the most visited hill attractions in Kerala. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Alleppey Backwaters",
+            "Wayanad",
+            "Kovalam Beach"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 10.6305,
+            "lng": 76.5111
+          }
+        },
+        {
+          "id": "alleppey-backwaters-kl",
+          "name": "Alleppey Backwaters",
+          "category": "Nature",
+          "shortDescription": "Alleppey Backwaters is a popular nature destination in Kerala.",
+          "fullDescription": "Alleppey Backwaters is one of the most visited nature attractions in Kerala. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Munnar",
+            "Wayanad",
+            "Kovalam Beach"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 10.7705,
+            "lng": 76.1111
+          }
+        },
+        {
+          "id": "wayanad-kl",
+          "name": "Wayanad",
+          "category": "Hill",
+          "shortDescription": "Wayanad is a popular hill destination in Kerala.",
+          "fullDescription": "Wayanad is one of the most visited hill attractions in Kerala. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Munnar",
+            "Alleppey Backwaters",
+            "Kovalam Beach"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 10.9305,
+            "lng": 76.3911
+          }
+        },
+        {
+          "id": "kovalam-beach-kl",
+          "name": "Kovalam Beach",
+          "category": "Beach",
+          "shortDescription": "Kovalam Beach is a popular beach destination in Kerala.",
+          "fullDescription": "Kovalam Beach is one of the most visited beach attractions in Kerala. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Munnar",
+            "Alleppey Backwaters",
+            "Wayanad"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 11.0705,
+            "lng": 76.0511
+          }
+        },
+        {
+          "id": "thekkady-kl",
+          "name": "Thekkady",
+          "category": "Wildlife",
+          "shortDescription": "Thekkady is a popular wildlife destination in Kerala.",
+          "fullDescription": "Thekkady is one of the most visited wildlife attractions in Kerala. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Munnar",
+            "Alleppey Backwaters",
+            "Wayanad"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 10.8505,
+            "lng": 76.3111
+          }
+        }
+      ]
+    },
+    {
+      "code": "MP",
+      "slug": "madhya-pradesh",
+      "name": "Madhya Pradesh",
+      "places": [
+        {
+          "id": "khajuraho-group-of-monuments-mp",
+          "name": "Khajuraho Group of Monuments",
+          "category": "Historical",
+          "shortDescription": "Khajuraho Group of Monuments is a popular historical destination in Madhya Pradesh.",
+          "fullDescription": "Khajuraho Group of Monuments is one of the most visited historical attractions in Madhya Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Sanchi Stupa",
+            "Bandhavgarh National Park",
+            "Pachmarhi"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 22.7534,
+            "lng": 78.8969
+          }
+        },
+        {
+          "id": "sanchi-stupa-mp",
+          "name": "Sanchi Stupa",
+          "category": "Historical",
+          "shortDescription": "Sanchi Stupa is a popular historical destination in Madhya Pradesh.",
+          "fullDescription": "Sanchi Stupa is one of the most visited historical attractions in Madhya Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Khajuraho Group of Monuments",
+            "Bandhavgarh National Park",
+            "Pachmarhi"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 22.8934,
+            "lng": 78.4969
+          }
+        },
+        {
+          "id": "bandhavgarh-national-park-mp",
+          "name": "Bandhavgarh National Park",
+          "category": "Wildlife",
+          "shortDescription": "Bandhavgarh National Park is a popular wildlife destination in Madhya Pradesh.",
+          "fullDescription": "Bandhavgarh National Park is one of the most visited wildlife attractions in Madhya Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Khajuraho Group of Monuments",
+            "Sanchi Stupa",
+            "Pachmarhi"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 23.0534,
+            "lng": 78.7769
+          }
+        },
+        {
+          "id": "pachmarhi-mp",
+          "name": "Pachmarhi",
+          "category": "Hill",
+          "shortDescription": "Pachmarhi is a popular hill destination in Madhya Pradesh.",
+          "fullDescription": "Pachmarhi is one of the most visited hill attractions in Madhya Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Khajuraho Group of Monuments",
+            "Sanchi Stupa",
+            "Bandhavgarh National Park"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 23.1934,
+            "lng": 78.4369
+          }
+        },
+        {
+          "id": "orchha-mp",
+          "name": "Orchha",
+          "category": "Historical",
+          "shortDescription": "Orchha is a popular historical destination in Madhya Pradesh.",
+          "fullDescription": "Orchha is one of the most visited historical attractions in Madhya Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Khajuraho Group of Monuments",
+            "Sanchi Stupa",
+            "Bandhavgarh National Park"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 22.9734,
+            "lng": 78.6969
+          }
+        }
+      ]
+    },
+    {
+      "code": "MH",
+      "slug": "maharashtra",
+      "name": "Maharashtra",
+      "places": [
+        {
+          "id": "ajanta-and-ellora-caves-mh",
+          "name": "Ajanta and Ellora Caves",
+          "category": "Historical",
+          "shortDescription": "Ajanta and Ellora Caves is a popular historical destination in Maharashtra.",
+          "fullDescription": "Ajanta and Ellora Caves is one of the most visited historical attractions in Maharashtra. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Gateway of India",
+            "Mahabaleshwar",
+            "Lonavala"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 19.5315,
+            "lng": 75.9539
+          }
+        },
+        {
+          "id": "gateway-of-india-mh",
+          "name": "Gateway of India",
+          "category": "Historical",
+          "shortDescription": "Gateway of India is a popular historical destination in Maharashtra.",
+          "fullDescription": "Gateway of India is one of the most visited historical attractions in Maharashtra. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Ajanta and Ellora Caves",
+            "Mahabaleshwar",
+            "Lonavala"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 19.6715,
+            "lng": 75.5539
+          }
+        },
+        {
+          "id": "mahabaleshwar-mh",
+          "name": "Mahabaleshwar",
+          "category": "Hill",
+          "shortDescription": "Mahabaleshwar is a popular hill destination in Maharashtra.",
+          "fullDescription": "Mahabaleshwar is one of the most visited hill attractions in Maharashtra. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Ajanta and Ellora Caves",
+            "Gateway of India",
+            "Lonavala"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 19.8315,
+            "lng": 75.8339
+          }
+        },
+        {
+          "id": "lonavala-mh",
+          "name": "Lonavala",
+          "category": "Hill",
+          "shortDescription": "Lonavala is a popular hill destination in Maharashtra.",
+          "fullDescription": "Lonavala is one of the most visited hill attractions in Maharashtra. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Ajanta and Ellora Caves",
+            "Gateway of India",
+            "Mahabaleshwar"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 19.9715,
+            "lng": 75.4939
+          }
+        },
+        {
+          "id": "tadoba-national-park-mh",
+          "name": "Tadoba National Park",
+          "category": "Wildlife",
+          "shortDescription": "Tadoba National Park is a popular wildlife destination in Maharashtra.",
+          "fullDescription": "Tadoba National Park is one of the most visited wildlife attractions in Maharashtra. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Ajanta and Ellora Caves",
+            "Gateway of India",
+            "Mahabaleshwar"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 19.7515,
+            "lng": 75.7539
+          }
+        }
+      ]
+    },
+    {
+      "code": "MN",
+      "slug": "manipur",
+      "name": "Manipur",
+      "places": [
+        {
+          "id": "loktak-lake-mn",
+          "name": "Loktak Lake",
+          "category": "Lake",
+          "shortDescription": "Loktak Lake is a popular lake destination in Manipur.",
+          "fullDescription": "Loktak Lake is one of the most visited lake attractions in Manipur. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Keibul Lamjao National Park",
+            "Kangla Fort",
+            "Shirui Hills"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 24.4437,
+            "lng": 94.1463
+          }
+        },
+        {
+          "id": "keibul-lamjao-national-park-mn",
+          "name": "Keibul Lamjao National Park",
+          "category": "Wildlife",
+          "shortDescription": "Keibul Lamjao National Park is a popular wildlife destination in Manipur.",
+          "fullDescription": "Keibul Lamjao National Park is one of the most visited wildlife attractions in Manipur. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Loktak Lake",
+            "Kangla Fort",
+            "Shirui Hills"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 24.5837,
+            "lng": 93.7463
+          }
+        },
+        {
+          "id": "kangla-fort-mn",
+          "name": "Kangla Fort",
+          "category": "Historical",
+          "shortDescription": "Kangla Fort is a popular historical destination in Manipur.",
+          "fullDescription": "Kangla Fort is one of the most visited historical attractions in Manipur. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Loktak Lake",
+            "Keibul Lamjao National Park",
+            "Shirui Hills"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 24.7437,
+            "lng": 94.0263
+          }
+        },
+        {
+          "id": "shirui-hills-mn",
+          "name": "Shirui Hills",
+          "category": "Hill",
+          "shortDescription": "Shirui Hills is a popular hill destination in Manipur.",
+          "fullDescription": "Shirui Hills is one of the most visited hill attractions in Manipur. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Loktak Lake",
+            "Keibul Lamjao National Park",
+            "Kangla Fort"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 24.8837,
+            "lng": 93.6863
+          }
+        },
+        {
+          "id": "moirang-mn",
+          "name": "Moirang",
+          "category": "Historical",
+          "shortDescription": "Moirang is a popular historical destination in Manipur.",
+          "fullDescription": "Moirang is one of the most visited historical attractions in Manipur. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Loktak Lake",
+            "Keibul Lamjao National Park",
+            "Kangla Fort"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 24.6637,
+            "lng": 93.9463
+          }
+        }
+      ]
+    },
+    {
+      "code": "ML",
+      "slug": "meghalaya",
+      "name": "Meghalaya",
+      "places": [
+        {
+          "id": "cherrapunji-ml",
+          "name": "Cherrapunji",
+          "category": "Hill",
+          "shortDescription": "Cherrapunji is a popular hill destination in Meghalaya.",
+          "fullDescription": "Cherrapunji is one of the most visited hill attractions in Meghalaya. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Shillong Peak",
+            "Dawki",
+            "Nongriat Root Bridge"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 25.247,
+            "lng": 91.6062
+          }
+        },
+        {
+          "id": "shillong-peak-ml",
+          "name": "Shillong Peak",
+          "category": "Hill",
+          "shortDescription": "Shillong Peak is a popular hill destination in Meghalaya.",
+          "fullDescription": "Shillong Peak is one of the most visited hill attractions in Meghalaya. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Cherrapunji",
+            "Dawki",
+            "Nongriat Root Bridge"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 25.387,
+            "lng": 91.2062
+          }
+        },
+        {
+          "id": "dawki-ml",
+          "name": "Dawki",
+          "category": "Nature",
+          "shortDescription": "Dawki is a popular nature destination in Meghalaya.",
+          "fullDescription": "Dawki is one of the most visited nature attractions in Meghalaya. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Cherrapunji",
+            "Shillong Peak",
+            "Nongriat Root Bridge"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 25.547,
+            "lng": 91.4862
+          }
+        },
+        {
+          "id": "nongriat-root-bridge-ml",
+          "name": "Nongriat Root Bridge",
+          "category": "Nature",
+          "shortDescription": "Nongriat Root Bridge is a popular nature destination in Meghalaya.",
+          "fullDescription": "Nongriat Root Bridge is one of the most visited nature attractions in Meghalaya. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Cherrapunji",
+            "Shillong Peak",
+            "Dawki"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 25.687,
+            "lng": 91.1462
+          }
+        },
+        {
+          "id": "mawlynnong-ml",
+          "name": "Mawlynnong",
+          "category": "Nature",
+          "shortDescription": "Mawlynnong is a popular nature destination in Meghalaya.",
+          "fullDescription": "Mawlynnong is one of the most visited nature attractions in Meghalaya. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Cherrapunji",
+            "Shillong Peak",
+            "Dawki"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 25.467,
+            "lng": 91.4062
+          }
+        }
+      ]
+    },
+    {
+      "code": "MZ",
+      "slug": "mizoram",
+      "name": "Mizoram",
+      "places": [
+        {
+          "id": "aizawl-viewpoints-mz",
+          "name": "Aizawl Viewpoints",
+          "category": "Hill",
+          "shortDescription": "Aizawl Viewpoints is a popular hill destination in Mizoram.",
+          "fullDescription": "Aizawl Viewpoints is one of the most visited hill attractions in Mizoram. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Reiek",
+            "Vantawng Falls",
+            "Phawngpui National Park"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 22.9445,
+            "lng": 93.1776
+          }
+        },
+        {
+          "id": "reiek-mz",
+          "name": "Reiek",
+          "category": "Nature",
+          "shortDescription": "Reiek is a popular nature destination in Mizoram.",
+          "fullDescription": "Reiek is one of the most visited nature attractions in Mizoram. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Aizawl Viewpoints",
+            "Vantawng Falls",
+            "Phawngpui National Park"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 23.0845,
+            "lng": 92.7776
+          }
+        },
+        {
+          "id": "vantawng-falls-mz",
+          "name": "Vantawng Falls",
+          "category": "Nature",
+          "shortDescription": "Vantawng Falls is a popular nature destination in Mizoram.",
+          "fullDescription": "Vantawng Falls is one of the most visited nature attractions in Mizoram. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Aizawl Viewpoints",
+            "Reiek",
+            "Phawngpui National Park"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 23.2445,
+            "lng": 93.0576
+          }
+        },
+        {
+          "id": "phawngpui-national-park-mz",
+          "name": "Phawngpui National Park",
+          "category": "Wildlife",
+          "shortDescription": "Phawngpui National Park is a popular wildlife destination in Mizoram.",
+          "fullDescription": "Phawngpui National Park is one of the most visited wildlife attractions in Mizoram. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Aizawl Viewpoints",
+            "Reiek",
+            "Vantawng Falls"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 23.3845,
+            "lng": 92.7176
+          }
+        },
+        {
+          "id": "tam-dil-mz",
+          "name": "Tam Dil",
+          "category": "Lake",
+          "shortDescription": "Tam Dil is a popular lake destination in Mizoram.",
+          "fullDescription": "Tam Dil is one of the most visited lake attractions in Mizoram. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Aizawl Viewpoints",
+            "Reiek",
+            "Vantawng Falls"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 23.1645,
+            "lng": 92.9776
+          }
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "slug": "nagaland",
+      "name": "Nagaland",
+      "places": [
+        {
+          "id": "dzukou-valley-nl",
+          "name": "Dzukou Valley",
+          "category": "Hill",
+          "shortDescription": "Dzukou Valley is a popular hill destination in Nagaland.",
+          "fullDescription": "Dzukou Valley is one of the most visited hill attractions in Nagaland. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Kohima War Cemetery",
+            "Khonoma Village",
+            "Japfu Peak"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 25.9384,
+            "lng": 94.8024
+          }
+        },
+        {
+          "id": "kohima-war-cemetery-nl",
+          "name": "Kohima War Cemetery",
+          "category": "Historical",
+          "shortDescription": "Kohima War Cemetery is a popular historical destination in Nagaland.",
+          "fullDescription": "Kohima War Cemetery is one of the most visited historical attractions in Nagaland. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Dzukou Valley",
+            "Khonoma Village",
+            "Japfu Peak"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 26.0784,
+            "lng": 94.4024
+          }
+        },
+        {
+          "id": "khonoma-village-nl",
+          "name": "Khonoma Village",
+          "category": "Nature",
+          "shortDescription": "Khonoma Village is a popular nature destination in Nagaland.",
+          "fullDescription": "Khonoma Village is one of the most visited nature attractions in Nagaland. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Dzukou Valley",
+            "Kohima War Cemetery",
+            "Japfu Peak"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 26.2384,
+            "lng": 94.6824
+          }
+        },
+        {
+          "id": "japfu-peak-nl",
+          "name": "Japfu Peak",
+          "category": "Hill",
+          "shortDescription": "Japfu Peak is a popular hill destination in Nagaland.",
+          "fullDescription": "Japfu Peak is one of the most visited hill attractions in Nagaland. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Dzukou Valley",
+            "Kohima War Cemetery",
+            "Khonoma Village"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 26.3784,
+            "lng": 94.3424
+          }
+        },
+        {
+          "id": "mokokchung-nl",
+          "name": "Mokokchung",
+          "category": "Nature",
+          "shortDescription": "Mokokchung is a popular nature destination in Nagaland.",
+          "fullDescription": "Mokokchung is one of the most visited nature attractions in Nagaland. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Dzukou Valley",
+            "Kohima War Cemetery",
+            "Khonoma Village"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 26.1584,
+            "lng": 94.6024
+          }
+        }
+      ]
+    },
+    {
+      "code": "OD",
+      "slug": "odisha",
+      "name": "Odisha",
+      "places": [
+        {
+          "id": "konark-sun-temple-od",
+          "name": "Konark Sun Temple",
+          "category": "Temple",
+          "shortDescription": "Konark Sun Temple is a popular temple destination in Odisha.",
+          "fullDescription": "Konark Sun Temple is one of the most visited temple attractions in Odisha. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Puri Beach",
+            "Chilika Lake",
+            "Lingaraj Temple"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 20.7317,
+            "lng": 85.3385
+          }
+        },
+        {
+          "id": "puri-beach-od",
+          "name": "Puri Beach",
+          "category": "Beach",
+          "shortDescription": "Puri Beach is a popular beach destination in Odisha.",
+          "fullDescription": "Puri Beach is one of the most visited beach attractions in Odisha. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Konark Sun Temple",
+            "Chilika Lake",
+            "Lingaraj Temple"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 20.8717,
+            "lng": 84.9385
+          }
+        },
+        {
+          "id": "chilika-lake-od",
+          "name": "Chilika Lake",
+          "category": "Lake",
+          "shortDescription": "Chilika Lake is a popular lake destination in Odisha.",
+          "fullDescription": "Chilika Lake is one of the most visited lake attractions in Odisha. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Konark Sun Temple",
+            "Puri Beach",
+            "Lingaraj Temple"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 21.0317,
+            "lng": 85.2185
+          }
+        },
+        {
+          "id": "lingaraj-temple-od",
+          "name": "Lingaraj Temple",
+          "category": "Temple",
+          "shortDescription": "Lingaraj Temple is a popular temple destination in Odisha.",
+          "fullDescription": "Lingaraj Temple is one of the most visited temple attractions in Odisha. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Konark Sun Temple",
+            "Puri Beach",
+            "Chilika Lake"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 21.1717,
+            "lng": 84.8785
+          }
+        },
+        {
+          "id": "simlipal-national-park-od",
+          "name": "Simlipal National Park",
+          "category": "Wildlife",
+          "shortDescription": "Simlipal National Park is a popular wildlife destination in Odisha.",
+          "fullDescription": "Simlipal National Park is one of the most visited wildlife attractions in Odisha. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Konark Sun Temple",
+            "Puri Beach",
+            "Chilika Lake"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 20.9517,
+            "lng": 85.1385
+          }
+        }
+      ]
+    },
+    {
+      "code": "PB",
+      "slug": "punjab",
+      "name": "Punjab",
+      "places": [
+        {
+          "id": "golden-temple-amritsar-pb",
+          "name": "Golden Temple, Amritsar",
+          "category": "Temple",
+          "shortDescription": "Golden Temple, Amritsar is a popular temple destination in Punjab.",
+          "fullDescription": "Golden Temple, Amritsar is one of the most visited temple attractions in Punjab. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Wagah Border",
+            "Anandpur Sahib",
+            "Jallianwala Bagh"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 30.9271,
+            "lng": 75.5812
+          }
+        },
+        {
+          "id": "wagah-border-pb",
+          "name": "Wagah Border",
+          "category": "Historical",
+          "shortDescription": "Wagah Border is a popular historical destination in Punjab.",
+          "fullDescription": "Wagah Border is one of the most visited historical attractions in Punjab. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Golden Temple, Amritsar",
+            "Anandpur Sahib",
+            "Jallianwala Bagh"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 31.0671,
+            "lng": 75.1812
+          }
+        },
+        {
+          "id": "anandpur-sahib-pb",
+          "name": "Anandpur Sahib",
+          "category": "Temple",
+          "shortDescription": "Anandpur Sahib is a popular temple destination in Punjab.",
+          "fullDescription": "Anandpur Sahib is one of the most visited temple attractions in Punjab. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Golden Temple, Amritsar",
+            "Wagah Border",
+            "Jallianwala Bagh"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 31.2271,
+            "lng": 75.4612
+          }
+        },
+        {
+          "id": "jallianwala-bagh-pb",
+          "name": "Jallianwala Bagh",
+          "category": "Historical",
+          "shortDescription": "Jallianwala Bagh is a popular historical destination in Punjab.",
+          "fullDescription": "Jallianwala Bagh is one of the most visited historical attractions in Punjab. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Golden Temple, Amritsar",
+            "Wagah Border",
+            "Anandpur Sahib"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 31.3671,
+            "lng": 75.1212
+          }
+        },
+        {
+          "id": "sheesh-mahal-patiala-pb",
+          "name": "Sheesh Mahal, Patiala",
+          "category": "Historical",
+          "shortDescription": "Sheesh Mahal, Patiala is a popular historical destination in Punjab.",
+          "fullDescription": "Sheesh Mahal, Patiala is one of the most visited historical attractions in Punjab. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Golden Temple, Amritsar",
+            "Wagah Border",
+            "Anandpur Sahib"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 31.1471,
+            "lng": 75.3812
+          }
+        }
+      ]
+    },
+    {
+      "code": "RJ",
+      "slug": "rajasthan",
+      "name": "Rajasthan",
+      "places": [
+        {
+          "id": "amber-fort-jaipur-rj",
+          "name": "Amber Fort, Jaipur",
+          "category": "Historical",
+          "shortDescription": "Amber Fort, Jaipur is a popular historical destination in Rajasthan.",
+          "fullDescription": "Amber Fort, Jaipur is one of the most visited historical attractions in Rajasthan. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "City Palace, Udaipur",
+            "Jaisalmer Fort",
+            "Mount Abu"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 26.8038,
+            "lng": 74.4579
+          }
+        },
+        {
+          "id": "city-palace-udaipur-rj",
+          "name": "City Palace, Udaipur",
+          "category": "Historical",
+          "shortDescription": "City Palace, Udaipur is a popular historical destination in Rajasthan.",
+          "fullDescription": "City Palace, Udaipur is one of the most visited historical attractions in Rajasthan. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Amber Fort, Jaipur",
+            "Jaisalmer Fort",
+            "Mount Abu"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 26.9438,
+            "lng": 74.0579
+          }
+        },
+        {
+          "id": "jaisalmer-fort-rj",
+          "name": "Jaisalmer Fort",
+          "category": "Historical",
+          "shortDescription": "Jaisalmer Fort is a popular historical destination in Rajasthan.",
+          "fullDescription": "Jaisalmer Fort is one of the most visited historical attractions in Rajasthan. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Amber Fort, Jaipur",
+            "City Palace, Udaipur",
+            "Mount Abu"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 27.1038,
+            "lng": 74.3379
+          }
+        },
+        {
+          "id": "mount-abu-rj",
+          "name": "Mount Abu",
+          "category": "Hill",
+          "shortDescription": "Mount Abu is a popular hill destination in Rajasthan.",
+          "fullDescription": "Mount Abu is one of the most visited hill attractions in Rajasthan. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Amber Fort, Jaipur",
+            "City Palace, Udaipur",
+            "Jaisalmer Fort"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 27.2438,
+            "lng": 73.9979
+          }
+        },
+        {
+          "id": "pushkar-rj",
+          "name": "Pushkar",
+          "category": "Temple",
+          "shortDescription": "Pushkar is a popular temple destination in Rajasthan.",
+          "fullDescription": "Pushkar is one of the most visited temple attractions in Rajasthan. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Amber Fort, Jaipur",
+            "City Palace, Udaipur",
+            "Jaisalmer Fort"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 27.0238,
+            "lng": 74.2579
+          }
+        }
+      ]
+    },
+    {
+      "code": "SK",
+      "slug": "sikkim",
+      "name": "Sikkim",
+      "places": [
+        {
+          "id": "tsomgo-lake-sk",
+          "name": "Tsomgo Lake",
+          "category": "Lake",
+          "shortDescription": "Tsomgo Lake is a popular lake destination in Sikkim.",
+          "fullDescription": "Tsomgo Lake is one of the most visited lake attractions in Sikkim. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Gangtok MG Marg",
+            "Pelling",
+            "Yumthang Valley"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 27.313,
+            "lng": 88.7522
+          }
+        },
+        {
+          "id": "gangtok-mg-marg-sk",
+          "name": "Gangtok MG Marg",
+          "category": "City",
+          "shortDescription": "Gangtok MG Marg is a popular city destination in Sikkim.",
+          "fullDescription": "Gangtok MG Marg is one of the most visited city attractions in Sikkim. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tsomgo Lake",
+            "Pelling",
+            "Yumthang Valley"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 27.453,
+            "lng": 88.3522
+          }
+        },
+        {
+          "id": "pelling-sk",
+          "name": "Pelling",
+          "category": "Hill",
+          "shortDescription": "Pelling is a popular hill destination in Sikkim.",
+          "fullDescription": "Pelling is one of the most visited hill attractions in Sikkim. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Tsomgo Lake",
+            "Gangtok MG Marg",
+            "Yumthang Valley"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 27.613,
+            "lng": 88.6322
+          }
+        },
+        {
+          "id": "yumthang-valley-sk",
+          "name": "Yumthang Valley",
+          "category": "Nature",
+          "shortDescription": "Yumthang Valley is a popular nature destination in Sikkim.",
+          "fullDescription": "Yumthang Valley is one of the most visited nature attractions in Sikkim. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tsomgo Lake",
+            "Gangtok MG Marg",
+            "Pelling"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 27.753,
+            "lng": 88.2922
+          }
+        },
+        {
+          "id": "nathula-pass-sk",
+          "name": "Nathula Pass",
+          "category": "Nature",
+          "shortDescription": "Nathula Pass is a popular nature destination in Sikkim.",
+          "fullDescription": "Nathula Pass is one of the most visited nature attractions in Sikkim. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Tsomgo Lake",
+            "Gangtok MG Marg",
+            "Pelling"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 27.533,
+            "lng": 88.5522
+          }
+        }
+      ]
+    },
+    {
+      "code": "TN",
+      "slug": "tamil-nadu",
+      "name": "Tamil Nadu",
+      "places": [
+        {
+          "id": "meenakshi-amman-temple-madurai-tn",
+          "name": "Meenakshi Amman Temple, Madurai",
+          "category": "Temple",
+          "shortDescription": "Meenakshi Amman Temple, Madurai is a popular temple destination in Tamil Nadu.",
+          "fullDescription": "Meenakshi Amman Temple, Madurai is one of the most visited temple attractions in Tamil Nadu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Ooty",
+            "Kanyakumari",
+            "Mahabalipuram"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 10.9071,
+            "lng": 78.8969
+          }
+        },
+        {
+          "id": "ooty-tn",
+          "name": "Ooty",
+          "category": "Hill",
+          "shortDescription": "Ooty is a popular hill destination in Tamil Nadu.",
+          "fullDescription": "Ooty is one of the most visited hill attractions in Tamil Nadu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Meenakshi Amman Temple, Madurai",
+            "Kanyakumari",
+            "Mahabalipuram"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 11.0471,
+            "lng": 78.4969
+          }
+        },
+        {
+          "id": "kanyakumari-tn",
+          "name": "Kanyakumari",
+          "category": "Beach",
+          "shortDescription": "Kanyakumari is a popular beach destination in Tamil Nadu.",
+          "fullDescription": "Kanyakumari is one of the most visited beach attractions in Tamil Nadu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Meenakshi Amman Temple, Madurai",
+            "Ooty",
+            "Mahabalipuram"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 11.2071,
+            "lng": 78.7769
+          }
+        },
+        {
+          "id": "mahabalipuram-tn",
+          "name": "Mahabalipuram",
+          "category": "Historical",
+          "shortDescription": "Mahabalipuram is a popular historical destination in Tamil Nadu.",
+          "fullDescription": "Mahabalipuram is one of the most visited historical attractions in Tamil Nadu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Meenakshi Amman Temple, Madurai",
+            "Ooty",
+            "Kanyakumari"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 11.3471,
+            "lng": 78.4369
+          }
+        },
+        {
+          "id": "rameswaram-tn",
+          "name": "Rameswaram",
+          "category": "Temple",
+          "shortDescription": "Rameswaram is a popular temple destination in Tamil Nadu.",
+          "fullDescription": "Rameswaram is one of the most visited temple attractions in Tamil Nadu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Meenakshi Amman Temple, Madurai",
+            "Ooty",
+            "Kanyakumari"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 11.1271,
+            "lng": 78.6969
+          }
+        }
+      ]
+    },
+    {
+      "code": "TS",
+      "slug": "telangana",
+      "name": "Telangana",
+      "places": [
+        {
+          "id": "charminar-ts",
+          "name": "Charminar",
+          "category": "Historical",
+          "shortDescription": "Charminar is a popular historical destination in Telangana.",
+          "fullDescription": "Charminar is one of the most visited historical attractions in Telangana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Golconda Fort",
+            "Ramoji Film City",
+            "Warangal Fort"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 17.8924,
+            "lng": 79.2593
+          }
+        },
+        {
+          "id": "golconda-fort-ts",
+          "name": "Golconda Fort",
+          "category": "Historical",
+          "shortDescription": "Golconda Fort is a popular historical destination in Telangana.",
+          "fullDescription": "Golconda Fort is one of the most visited historical attractions in Telangana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Charminar",
+            "Ramoji Film City",
+            "Warangal Fort"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 18.0324,
+            "lng": 78.8593
+          }
+        },
+        {
+          "id": "ramoji-film-city-ts",
+          "name": "Ramoji Film City",
+          "category": "City",
+          "shortDescription": "Ramoji Film City is a popular city destination in Telangana.",
+          "fullDescription": "Ramoji Film City is one of the most visited city attractions in Telangana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Charminar",
+            "Golconda Fort",
+            "Warangal Fort"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 18.1924,
+            "lng": 79.1393
+          }
+        },
+        {
+          "id": "warangal-fort-ts",
+          "name": "Warangal Fort",
+          "category": "Historical",
+          "shortDescription": "Warangal Fort is a popular historical destination in Telangana.",
+          "fullDescription": "Warangal Fort is one of the most visited historical attractions in Telangana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Charminar",
+            "Golconda Fort",
+            "Ramoji Film City"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 18.3324,
+            "lng": 78.7993
+          }
+        },
+        {
+          "id": "yadadri-temple-ts",
+          "name": "Yadadri Temple",
+          "category": "Temple",
+          "shortDescription": "Yadadri Temple is a popular temple destination in Telangana.",
+          "fullDescription": "Yadadri Temple is one of the most visited temple attractions in Telangana. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Charminar",
+            "Golconda Fort",
+            "Ramoji Film City"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 18.1124,
+            "lng": 79.0593
+          }
+        }
+      ]
+    },
+    {
+      "code": "TR",
+      "slug": "tripura",
+      "name": "Tripura",
+      "places": [
+        {
+          "id": "ujjayanta-palace-tr",
+          "name": "Ujjayanta Palace",
+          "category": "Historical",
+          "shortDescription": "Ujjayanta Palace is a popular historical destination in Tripura.",
+          "fullDescription": "Ujjayanta Palace is one of the most visited historical attractions in Tripura. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Neermahal",
+            "Unakoti",
+            "Sepahijala Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 23.7208,
+            "lng": 92.2282
+          }
+        },
+        {
+          "id": "neermahal-tr",
+          "name": "Neermahal",
+          "category": "Historical",
+          "shortDescription": "Neermahal is a popular historical destination in Tripura.",
+          "fullDescription": "Neermahal is one of the most visited historical attractions in Tripura. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Ujjayanta Palace",
+            "Unakoti",
+            "Sepahijala Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 23.8608,
+            "lng": 91.8282
+          }
+        },
+        {
+          "id": "unakoti-tr",
+          "name": "Unakoti",
+          "category": "Historical",
+          "shortDescription": "Unakoti is a popular historical destination in Tripura.",
+          "fullDescription": "Unakoti is one of the most visited historical attractions in Tripura. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Ujjayanta Palace",
+            "Neermahal",
+            "Sepahijala Wildlife Sanctuary"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 24.0208,
+            "lng": 92.1082
+          }
+        },
+        {
+          "id": "sepahijala-wildlife-sanctuary-tr",
+          "name": "Sepahijala Wildlife Sanctuary",
+          "category": "Wildlife",
+          "shortDescription": "Sepahijala Wildlife Sanctuary is a popular wildlife destination in Tripura.",
+          "fullDescription": "Sepahijala Wildlife Sanctuary is one of the most visited wildlife attractions in Tripura. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Ujjayanta Palace",
+            "Neermahal",
+            "Unakoti"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 24.1608,
+            "lng": 91.7682
+          }
+        },
+        {
+          "id": "jampui-hills-tr",
+          "name": "Jampui Hills",
+          "category": "Hill",
+          "shortDescription": "Jampui Hills is a popular hill destination in Tripura.",
+          "fullDescription": "Jampui Hills is one of the most visited hill attractions in Tripura. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Ujjayanta Palace",
+            "Neermahal",
+            "Unakoti"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 23.9408,
+            "lng": 92.0282
+          }
+        }
+      ]
+    },
+    {
+      "code": "UP",
+      "slug": "uttar-pradesh",
+      "name": "Uttar Pradesh",
+      "places": [
+        {
+          "id": "taj-mahal-up",
+          "name": "Taj Mahal",
+          "category": "Historical",
+          "shortDescription": "Taj Mahal is a popular historical destination in Uttar Pradesh.",
+          "fullDescription": "Taj Mahal is one of the most visited historical attractions in Uttar Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Varanasi Ghats",
+            "Ayodhya Ram Mandir",
+            "Fatehpur Sikri"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 26.6267,
+            "lng": 81.1862
+          }
+        },
+        {
+          "id": "varanasi-ghats-up",
+          "name": "Varanasi Ghats",
+          "category": "Temple",
+          "shortDescription": "Varanasi Ghats is a popular temple destination in Uttar Pradesh.",
+          "fullDescription": "Varanasi Ghats is one of the most visited temple attractions in Uttar Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Taj Mahal",
+            "Ayodhya Ram Mandir",
+            "Fatehpur Sikri"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 26.7667,
+            "lng": 80.7862
+          }
+        },
+        {
+          "id": "ayodhya-ram-mandir-up",
+          "name": "Ayodhya Ram Mandir",
+          "category": "Temple",
+          "shortDescription": "Ayodhya Ram Mandir is a popular temple destination in Uttar Pradesh.",
+          "fullDescription": "Ayodhya Ram Mandir is one of the most visited temple attractions in Uttar Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Taj Mahal",
+            "Varanasi Ghats",
+            "Fatehpur Sikri"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 26.9267,
+            "lng": 81.0662
+          }
+        },
+        {
+          "id": "fatehpur-sikri-up",
+          "name": "Fatehpur Sikri",
+          "category": "Historical",
+          "shortDescription": "Fatehpur Sikri is a popular historical destination in Uttar Pradesh.",
+          "fullDescription": "Fatehpur Sikri is one of the most visited historical attractions in Uttar Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Taj Mahal",
+            "Varanasi Ghats",
+            "Ayodhya Ram Mandir"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 27.0667,
+            "lng": 80.7262
+          }
+        },
+        {
+          "id": "dudhwa-national-park-up",
+          "name": "Dudhwa National Park",
+          "category": "Wildlife",
+          "shortDescription": "Dudhwa National Park is a popular wildlife destination in Uttar Pradesh.",
+          "fullDescription": "Dudhwa National Park is one of the most visited wildlife attractions in Uttar Pradesh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Taj Mahal",
+            "Varanasi Ghats",
+            "Ayodhya Ram Mandir"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 26.8467,
+            "lng": 80.9862
+          }
+        }
+      ]
+    },
+    {
+      "code": "UK",
+      "slug": "uttarakhand",
+      "name": "Uttarakhand",
+      "places": [
+        {
+          "id": "nainital-uk",
+          "name": "Nainital",
+          "category": "Hill",
+          "shortDescription": "Nainital is a popular hill destination in Uttarakhand.",
+          "fullDescription": "Nainital is one of the most visited hill attractions in Uttarakhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Mussoorie",
+            "Kedarnath",
+            "Valley of Flowers"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 29.8468,
+            "lng": 79.2593
+          }
+        },
+        {
+          "id": "mussoorie-uk",
+          "name": "Mussoorie",
+          "category": "Hill",
+          "shortDescription": "Mussoorie is a popular hill destination in Uttarakhand.",
+          "fullDescription": "Mussoorie is one of the most visited hill attractions in Uttarakhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Nainital",
+            "Kedarnath",
+            "Valley of Flowers"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 29.9868,
+            "lng": 78.8593
+          }
+        },
+        {
+          "id": "kedarnath-uk",
+          "name": "Kedarnath",
+          "category": "Temple",
+          "shortDescription": "Kedarnath is a popular temple destination in Uttarakhand.",
+          "fullDescription": "Kedarnath is one of the most visited temple attractions in Uttarakhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Nainital",
+            "Mussoorie",
+            "Valley of Flowers"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 30.1468,
+            "lng": 79.1393
+          }
+        },
+        {
+          "id": "valley-of-flowers-uk",
+          "name": "Valley of Flowers",
+          "category": "Nature",
+          "shortDescription": "Valley of Flowers is a popular nature destination in Uttarakhand.",
+          "fullDescription": "Valley of Flowers is one of the most visited nature attractions in Uttarakhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Nainital",
+            "Mussoorie",
+            "Kedarnath"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 30.2868,
+            "lng": 78.7993
+          }
+        },
+        {
+          "id": "rishikesh-uk",
+          "name": "Rishikesh",
+          "category": "City",
+          "shortDescription": "Rishikesh is a popular city destination in Uttarakhand.",
+          "fullDescription": "Rishikesh is one of the most visited city attractions in Uttarakhand. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Nainital",
+            "Mussoorie",
+            "Kedarnath"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 30.0668,
+            "lng": 79.0593
+          }
+        }
+      ]
+    },
+    {
+      "code": "WB",
+      "slug": "west-bengal",
+      "name": "West Bengal",
+      "places": [
+        {
+          "id": "darjeeling-wb",
+          "name": "Darjeeling",
+          "category": "Hill",
+          "shortDescription": "Darjeeling is a popular hill destination in West Bengal.",
+          "fullDescription": "Darjeeling is one of the most visited hill attractions in West Bengal. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Sundarbans",
+            "Victoria Memorial",
+            "Digha Beach"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 22.7668,
+            "lng": 88.095
+          }
+        },
+        {
+          "id": "sundarbans-wb",
+          "name": "Sundarbans",
+          "category": "Wildlife",
+          "shortDescription": "Sundarbans is a popular wildlife destination in West Bengal.",
+          "fullDescription": "Sundarbans is one of the most visited wildlife attractions in West Bengal. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Darjeeling",
+            "Victoria Memorial",
+            "Digha Beach"
+          ],
+          "travelTips": [
+            "Book safaris or permits in advance during peak season.",
+            "Maintain silence and distance from animals.",
+            "Follow ranger instructions at all times."
+          ],
+          "coordinates": {
+            "lat": 22.9068,
+            "lng": 87.695
+          }
+        },
+        {
+          "id": "victoria-memorial-wb",
+          "name": "Victoria Memorial",
+          "category": "Historical",
+          "shortDescription": "Victoria Memorial is a popular historical destination in West Bengal.",
+          "fullDescription": "Victoria Memorial is one of the most visited historical attractions in West Bengal. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Darjeeling",
+            "Sundarbans",
+            "Digha Beach"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 23.0668,
+            "lng": 87.975
+          }
+        },
+        {
+          "id": "digha-beach-wb",
+          "name": "Digha Beach",
+          "category": "Beach",
+          "shortDescription": "Digha Beach is a popular beach destination in West Bengal.",
+          "fullDescription": "Digha Beach is one of the most visited beach attractions in West Bengal. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Darjeeling",
+            "Sundarbans",
+            "Victoria Memorial"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 23.2068,
+            "lng": 87.635
+          }
+        },
+        {
+          "id": "kalimpong-wb",
+          "name": "Kalimpong",
+          "category": "Hill",
+          "shortDescription": "Kalimpong is a popular hill destination in West Bengal.",
+          "fullDescription": "Kalimpong is one of the most visited hill attractions in West Bengal. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Darjeeling",
+            "Sundarbans",
+            "Victoria Memorial"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 22.9868,
+            "lng": 87.895
+          }
+        }
+      ]
+    },
+    {
+      "code": "AN",
+      "slug": "andaman-and-nicobar-islands",
+      "name": "Andaman and Nicobar Islands",
+      "places": [
+        {
+          "id": "cellular-jail-an",
+          "name": "Cellular Jail",
+          "category": "Historical",
+          "shortDescription": "Cellular Jail is a popular historical destination in Andaman and Nicobar Islands.",
+          "fullDescription": "Cellular Jail is one of the most visited historical attractions in Andaman and Nicobar Islands. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Radhanagar Beach",
+            "Ross Island",
+            "Baratang Limestone Caves"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 11.5201,
+            "lng": 92.8986
+          }
+        },
+        {
+          "id": "radhanagar-beach-an",
+          "name": "Radhanagar Beach",
+          "category": "Beach",
+          "shortDescription": "Radhanagar Beach is a popular beach destination in Andaman and Nicobar Islands.",
+          "fullDescription": "Radhanagar Beach is one of the most visited beach attractions in Andaman and Nicobar Islands. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Cellular Jail",
+            "Ross Island",
+            "Baratang Limestone Caves"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 11.6601,
+            "lng": 92.4986
+          }
+        },
+        {
+          "id": "ross-island-an",
+          "name": "Ross Island",
+          "category": "Island",
+          "shortDescription": "Ross Island is a popular island destination in Andaman and Nicobar Islands.",
+          "fullDescription": "Ross Island is one of the most visited island attractions in Andaman and Nicobar Islands. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Cellular Jail",
+            "Radhanagar Beach",
+            "Baratang Limestone Caves"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 11.8201,
+            "lng": 92.7786
+          }
+        },
+        {
+          "id": "baratang-limestone-caves-an",
+          "name": "Baratang Limestone Caves",
+          "category": "Nature",
+          "shortDescription": "Baratang Limestone Caves is a popular nature destination in Andaman and Nicobar Islands.",
+          "fullDescription": "Baratang Limestone Caves is one of the most visited nature attractions in Andaman and Nicobar Islands. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Cellular Jail",
+            "Radhanagar Beach",
+            "Ross Island"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 11.9601,
+            "lng": 92.4386
+          }
+        },
+        {
+          "id": "neil-island-an",
+          "name": "Neil Island",
+          "category": "Island",
+          "shortDescription": "Neil Island is a popular island destination in Andaman and Nicobar Islands.",
+          "fullDescription": "Neil Island is one of the most visited island attractions in Andaman and Nicobar Islands. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Cellular Jail",
+            "Radhanagar Beach",
+            "Ross Island"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 11.7401,
+            "lng": 92.6986
+          }
+        }
+      ]
+    },
+    {
+      "code": "CH",
+      "slug": "chandigarh",
+      "name": "Chandigarh",
+      "places": [
+        {
+          "id": "sukhna-lake-ch",
+          "name": "Sukhna Lake",
+          "category": "Lake",
+          "shortDescription": "Sukhna Lake is a popular lake destination in Chandigarh.",
+          "fullDescription": "Sukhna Lake is one of the most visited lake attractions in Chandigarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Rock Garden",
+            "Zakir Hussain Rose Garden",
+            "Capitol Complex"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 30.5133,
+            "lng": 77.0194
+          }
+        },
+        {
+          "id": "rock-garden-ch",
+          "name": "Rock Garden",
+          "category": "City",
+          "shortDescription": "Rock Garden is a popular city destination in Chandigarh.",
+          "fullDescription": "Rock Garden is one of the most visited city attractions in Chandigarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Sukhna Lake",
+            "Zakir Hussain Rose Garden",
+            "Capitol Complex"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 30.6533,
+            "lng": 76.6194
+          }
+        },
+        {
+          "id": "zakir-hussain-rose-garden-ch",
+          "name": "Zakir Hussain Rose Garden",
+          "category": "Nature",
+          "shortDescription": "Zakir Hussain Rose Garden is a popular nature destination in Chandigarh.",
+          "fullDescription": "Zakir Hussain Rose Garden is one of the most visited nature attractions in Chandigarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Sukhna Lake",
+            "Rock Garden",
+            "Capitol Complex"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 30.8133,
+            "lng": 76.8994
+          }
+        },
+        {
+          "id": "capitol-complex-ch",
+          "name": "Capitol Complex",
+          "category": "Historical",
+          "shortDescription": "Capitol Complex is a popular historical destination in Chandigarh.",
+          "fullDescription": "Capitol Complex is one of the most visited historical attractions in Chandigarh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Sukhna Lake",
+            "Rock Garden",
+            "Zakir Hussain Rose Garden"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 30.9533,
+            "lng": 76.5594
+          }
+        }
+      ]
+    },
+    {
+      "code": "DH",
+      "slug": "dadra-and-nagar-haveli-and-daman-and-diu",
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "places": [
+        {
+          "id": "daman-fort-dh",
+          "name": "Daman Fort",
+          "category": "Historical",
+          "shortDescription": "Daman Fort is a popular historical destination in Dadra and Nagar Haveli and Daman and Diu.",
+          "fullDescription": "Daman Fort is one of the most visited historical attractions in Dadra and Nagar Haveli and Daman and Diu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Devka Beach",
+            "Silvassa Tribal Museum",
+            "Diu Fort"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 20.1774,
+            "lng": 73.0728
+          }
+        },
+        {
+          "id": "devka-beach-dh",
+          "name": "Devka Beach",
+          "category": "Beach",
+          "shortDescription": "Devka Beach is a popular beach destination in Dadra and Nagar Haveli and Daman and Diu.",
+          "fullDescription": "Devka Beach is one of the most visited beach attractions in Dadra and Nagar Haveli and Daman and Diu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Daman Fort",
+            "Silvassa Tribal Museum",
+            "Diu Fort"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 20.3174,
+            "lng": 72.6728
+          }
+        },
+        {
+          "id": "silvassa-tribal-museum-dh",
+          "name": "Silvassa Tribal Museum",
+          "category": "Historical",
+          "shortDescription": "Silvassa Tribal Museum is a popular historical destination in Dadra and Nagar Haveli and Daman and Diu.",
+          "fullDescription": "Silvassa Tribal Museum is one of the most visited historical attractions in Dadra and Nagar Haveli and Daman and Diu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Daman Fort",
+            "Devka Beach",
+            "Diu Fort"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 20.4774,
+            "lng": 72.9528
+          }
+        },
+        {
+          "id": "diu-fort-dh",
+          "name": "Diu Fort",
+          "category": "Historical",
+          "shortDescription": "Diu Fort is a popular historical destination in Dadra and Nagar Haveli and Daman and Diu.",
+          "fullDescription": "Diu Fort is one of the most visited historical attractions in Dadra and Nagar Haveli and Daman and Diu. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Daman Fort",
+            "Devka Beach",
+            "Silvassa Tribal Museum"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 20.6174,
+            "lng": 72.6128
+          }
+        }
+      ]
+    },
+    {
+      "code": "DL",
+      "slug": "delhi",
+      "name": "Delhi",
+      "places": [
+        {
+          "id": "india-gate-dl",
+          "name": "India Gate",
+          "category": "Historical",
+          "shortDescription": "India Gate is a popular historical destination in Delhi.",
+          "fullDescription": "India Gate is one of the most visited historical attractions in Delhi. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Red Fort",
+            "Qutub Minar",
+            "Lotus Temple"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 28.4841,
+            "lng": 77.3425
+          }
+        },
+        {
+          "id": "red-fort-dl",
+          "name": "Red Fort",
+          "category": "Historical",
+          "shortDescription": "Red Fort is a popular historical destination in Delhi.",
+          "fullDescription": "Red Fort is one of the most visited historical attractions in Delhi. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "India Gate",
+            "Qutub Minar",
+            "Lotus Temple"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 28.6241,
+            "lng": 76.9425
+          }
+        },
+        {
+          "id": "qutub-minar-dl",
+          "name": "Qutub Minar",
+          "category": "Historical",
+          "shortDescription": "Qutub Minar is a popular historical destination in Delhi.",
+          "fullDescription": "Qutub Minar is one of the most visited historical attractions in Delhi. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "India Gate",
+            "Red Fort",
+            "Lotus Temple"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 28.7841,
+            "lng": 77.2225
+          }
+        },
+        {
+          "id": "lotus-temple-dl",
+          "name": "Lotus Temple",
+          "category": "Temple",
+          "shortDescription": "Lotus Temple is a popular temple destination in Delhi.",
+          "fullDescription": "Lotus Temple is one of the most visited temple attractions in Delhi. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "India Gate",
+            "Red Fort",
+            "Qutub Minar"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 28.9241,
+            "lng": 76.8825
+          }
+        },
+        {
+          "id": "humayun-s-tomb-dl",
+          "name": "Humayun's Tomb",
+          "category": "Historical",
+          "shortDescription": "Humayun's Tomb is a popular historical destination in Delhi.",
+          "fullDescription": "Humayun's Tomb is one of the most visited historical attractions in Delhi. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "India Gate",
+            "Red Fort",
+            "Qutub Minar"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 28.7041,
+            "lng": 77.1425
+          }
+        }
+      ]
+    },
+    {
+      "code": "JK",
+      "slug": "jammu-and-kashmir",
+      "name": "Jammu and Kashmir",
+      "places": [
+        {
+          "id": "gulmarg-jk",
+          "name": "Gulmarg",
+          "category": "Hill",
+          "shortDescription": "Gulmarg is a popular hill destination in Jammu and Kashmir.",
+          "fullDescription": "Gulmarg is one of the most visited hill attractions in Jammu and Kashmir. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Pahalgam",
+            "Dal Lake",
+            "Vaishno Devi"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 33.5582,
+            "lng": 76.8162
+          }
+        },
+        {
+          "id": "pahalgam-jk",
+          "name": "Pahalgam",
+          "category": "Hill",
+          "shortDescription": "Pahalgam is a popular hill destination in Jammu and Kashmir.",
+          "fullDescription": "Pahalgam is one of the most visited hill attractions in Jammu and Kashmir. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Gulmarg",
+            "Dal Lake",
+            "Vaishno Devi"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 33.6982,
+            "lng": 76.4162
+          }
+        },
+        {
+          "id": "dal-lake-jk",
+          "name": "Dal Lake",
+          "category": "Lake",
+          "shortDescription": "Dal Lake is a popular lake destination in Jammu and Kashmir.",
+          "fullDescription": "Dal Lake is one of the most visited lake attractions in Jammu and Kashmir. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Gulmarg",
+            "Pahalgam",
+            "Vaishno Devi"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 33.8582,
+            "lng": 76.6962
+          }
+        },
+        {
+          "id": "vaishno-devi-jk",
+          "name": "Vaishno Devi",
+          "category": "Temple",
+          "shortDescription": "Vaishno Devi is a popular temple destination in Jammu and Kashmir.",
+          "fullDescription": "Vaishno Devi is one of the most visited temple attractions in Jammu and Kashmir. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Gulmarg",
+            "Pahalgam",
+            "Dal Lake"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 33.9982,
+            "lng": 76.3562
+          }
+        },
+        {
+          "id": "sonamarg-jk",
+          "name": "Sonamarg",
+          "category": "Hill",
+          "shortDescription": "Sonamarg is a popular hill destination in Jammu and Kashmir.",
+          "fullDescription": "Sonamarg is one of the most visited hill attractions in Jammu and Kashmir. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "March to June and September to November",
+          "nearbyPlaces": [
+            "Gulmarg",
+            "Pahalgam",
+            "Dal Lake"
+          ],
+          "travelTips": [
+            "Carry layered clothing for temperature changes.",
+            "Check weather and road conditions before departure.",
+            "Plan buffer time for hilly route traffic."
+          ],
+          "coordinates": {
+            "lat": 33.7782,
+            "lng": 76.6162
+          }
+        }
+      ]
+    },
+    {
+      "code": "LA",
+      "slug": "ladakh",
+      "name": "Ladakh",
+      "places": [
+        {
+          "id": "pangong-lake-la",
+          "name": "Pangong Lake",
+          "category": "Lake",
+          "shortDescription": "Pangong Lake is a popular lake destination in Ladakh.",
+          "fullDescription": "Pangong Lake is one of the most visited lake attractions in Ladakh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Nubra Valley",
+            "Khardung La",
+            "Leh Palace"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 33.9326,
+            "lng": 77.817
+          }
+        },
+        {
+          "id": "nubra-valley-la",
+          "name": "Nubra Valley",
+          "category": "Nature",
+          "shortDescription": "Nubra Valley is a popular nature destination in Ladakh.",
+          "fullDescription": "Nubra Valley is one of the most visited nature attractions in Ladakh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Pangong Lake",
+            "Khardung La",
+            "Leh Palace"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 34.0726,
+            "lng": 77.417
+          }
+        },
+        {
+          "id": "khardung-la-la",
+          "name": "Khardung La",
+          "category": "Nature",
+          "shortDescription": "Khardung La is a popular nature destination in Ladakh.",
+          "fullDescription": "Khardung La is one of the most visited nature attractions in Ladakh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Pangong Lake",
+            "Nubra Valley",
+            "Leh Palace"
+          ],
+          "travelTips": [
+            "Carry light snacks, water, and basic first aid.",
+            "Use non-slip footwear on uneven trails.",
+            "Avoid littering and protect local ecosystems."
+          ],
+          "coordinates": {
+            "lat": 34.2326,
+            "lng": 77.697
+          }
+        },
+        {
+          "id": "leh-palace-la",
+          "name": "Leh Palace",
+          "category": "Historical",
+          "shortDescription": "Leh Palace is a popular historical destination in Ladakh.",
+          "fullDescription": "Leh Palace is one of the most visited historical attractions in Ladakh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Pangong Lake",
+            "Nubra Valley",
+            "Khardung La"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 34.3726,
+            "lng": 77.357
+          }
+        },
+        {
+          "id": "tso-moriri-la",
+          "name": "Tso Moriri",
+          "category": "Lake",
+          "shortDescription": "Tso Moriri is a popular lake destination in Ladakh.",
+          "fullDescription": "Tso Moriri is one of the most visited lake attractions in Ladakh. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Pangong Lake",
+            "Nubra Valley",
+            "Khardung La"
+          ],
+          "travelTips": [
+            "Prefer guided boating in authorized zones.",
+            "Visit during clear daylight for safer navigation.",
+            "Keep weatherproof jackets for evening breeze."
+          ],
+          "coordinates": {
+            "lat": 34.1526,
+            "lng": 77.617
+          }
+        }
+      ]
+    },
+    {
+      "code": "LD",
+      "slug": "lakshadweep",
+      "name": "Lakshadweep",
+      "places": [
+        {
+          "id": "agatti-island-ld",
+          "name": "Agatti Island",
+          "category": "Island",
+          "shortDescription": "Agatti Island is a popular island destination in Lakshadweep.",
+          "fullDescription": "Agatti Island is one of the most visited island attractions in Lakshadweep. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Bangaram Island",
+            "Kavaratti",
+            "Minicoy Island"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 10.3467,
+            "lng": 72.8817
+          }
+        },
+        {
+          "id": "bangaram-island-ld",
+          "name": "Bangaram Island",
+          "category": "Island",
+          "shortDescription": "Bangaram Island is a popular island destination in Lakshadweep.",
+          "fullDescription": "Bangaram Island is one of the most visited island attractions in Lakshadweep. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Agatti Island",
+            "Kavaratti",
+            "Minicoy Island"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 10.4867,
+            "lng": 72.4817
+          }
+        },
+        {
+          "id": "kavaratti-ld",
+          "name": "Kavaratti",
+          "category": "Island",
+          "shortDescription": "Kavaratti is a popular island destination in Lakshadweep.",
+          "fullDescription": "Kavaratti is one of the most visited island attractions in Lakshadweep. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Agatti Island",
+            "Bangaram Island",
+            "Minicoy Island"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 10.6467,
+            "lng": 72.7617
+          }
+        },
+        {
+          "id": "minicoy-island-ld",
+          "name": "Minicoy Island",
+          "category": "Island",
+          "shortDescription": "Minicoy Island is a popular island destination in Lakshadweep.",
+          "fullDescription": "Minicoy Island is one of the most visited island attractions in Lakshadweep. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to April",
+          "nearbyPlaces": [
+            "Agatti Island",
+            "Bangaram Island",
+            "Kavaratti"
+          ],
+          "travelTips": [
+            "Check ferry schedules and weather alerts in advance.",
+            "Carry sunscreen and reusable water bottles.",
+            "Respect marine life and reef protection guidelines."
+          ],
+          "coordinates": {
+            "lat": 10.7867,
+            "lng": 72.4217
+          }
+        }
+      ]
+    },
+    {
+      "code": "PY",
+      "slug": "puducherry",
+      "name": "Puducherry",
+      "places": [
+        {
+          "id": "promenade-beach-py",
+          "name": "Promenade Beach",
+          "category": "Beach",
+          "shortDescription": "Promenade Beach is a popular beach destination in Puducherry.",
+          "fullDescription": "Promenade Beach is one of the most visited beach attractions in Puducherry. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Auroville",
+            "Paradise Beach",
+            "French Quarter"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 11.7216,
+            "lng": 80.0483
+          }
+        },
+        {
+          "id": "auroville-py",
+          "name": "Auroville",
+          "category": "City",
+          "shortDescription": "Auroville is a popular city destination in Puducherry.",
+          "fullDescription": "Auroville is one of the most visited city attractions in Puducherry. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Promenade Beach",
+            "Paradise Beach",
+            "French Quarter"
+          ],
+          "travelTips": [
+            "Start early to cover major attractions smoothly.",
+            "Prefer metro or rideshare in dense traffic zones.",
+            "Keep small cash for local markets and transport."
+          ],
+          "coordinates": {
+            "lat": 11.8616,
+            "lng": 79.6483
+          }
+        },
+        {
+          "id": "paradise-beach-py",
+          "name": "Paradise Beach",
+          "category": "Beach",
+          "shortDescription": "Paradise Beach is a popular beach destination in Puducherry.",
+          "fullDescription": "Paradise Beach is one of the most visited beach attractions in Puducherry. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "November to February",
+          "nearbyPlaces": [
+            "Promenade Beach",
+            "Auroville",
+            "French Quarter"
+          ],
+          "travelTips": [
+            "Swim only in lifeguard-marked zones.",
+            "Avoid peak afternoon sun and stay hydrated.",
+            "Keep electronics protected from sand and splash."
+          ],
+          "coordinates": {
+            "lat": 12.0216,
+            "lng": 79.9283
+          }
+        },
+        {
+          "id": "french-quarter-py",
+          "name": "French Quarter",
+          "category": "Historical",
+          "shortDescription": "French Quarter is a popular historical destination in Puducherry.",
+          "fullDescription": "French Quarter is one of the most visited historical attractions in Puducherry. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Promenade Beach",
+            "Auroville",
+            "Paradise Beach"
+          ],
+          "travelTips": [
+            "Use certified guides for better historical context.",
+            "Carry water and sun protection for daytime visits.",
+            "Follow site conservation and photography rules."
+          ],
+          "coordinates": {
+            "lat": 12.1616,
+            "lng": 79.5883
+          }
+        },
+        {
+          "id": "aurobindo-ashram-py",
+          "name": "Aurobindo Ashram",
+          "category": "Temple",
+          "shortDescription": "Aurobindo Ashram is a popular temple destination in Puducherry.",
+          "fullDescription": "Aurobindo Ashram is one of the most visited temple attractions in Puducherry. It is widely chosen by domestic and international travelers for sightseeing, local culture, and regional travel experiences.",
+          "bestTimeToVisit": "October to March",
+          "nearbyPlaces": [
+            "Promenade Beach",
+            "Auroville",
+            "Paradise Beach"
+          ],
+          "travelTips": [
+            "Dress modestly and respect local customs.",
+            "Visit during early hours to avoid heavy queues.",
+            "Keep footwear and valuables in designated counters."
+          ],
+          "coordinates": {
+            "lat": 11.9416,
+            "lng": 79.8483
+          }
+        }
+      ]
+    }
+  ]
+}

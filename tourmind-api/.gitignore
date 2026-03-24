@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.*
+!.env.example
+.internal-key.txt
+*.log
+server-start.out.log
+server-start.err.log

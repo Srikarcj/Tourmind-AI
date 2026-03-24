@@ -1,0 +1,25 @@
+{
+  "name": "tourmind-api",
+  "version": "1.0.0",
+  "description": "TourMind AI backend API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "lint": "node -e \"console.log('No linter configured')\"",
+    "sync:places": "node scripts/syncExternalPlaces.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.16.0",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.13.1",
+    "resend": "^4.1.2"
+  }
+}

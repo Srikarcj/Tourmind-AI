@@ -1,0 +1,66 @@
+openapi: 3.0.3
+info:
+  title: TourMind AI API
+  version: 2.0.0
+  description: Advanced internal travel planning and booking workflow API.
+servers:
+  - url: http://localhost:5000
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: API health payload
+  /api/recommendations:
+    get:
+      summary: Get personalized recommendations
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Recommendation list
+  /api/routes/multi-stop:
+    post:
+      summary: Generate multi-stop route plan
+      requestBody:
+        required: true
+      responses:
+        '200':
+          description: Multi-stop route result
+  /api/ai/generate-trip:
+    post:
+      summary: Generate AI itinerary
+      responses:
+        '200':
+          description: Trip itinerary
+  /api/bookings/create:
+    post:
+      summary: Create booking
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Booking created
+  /api/bookings/status:
+    patch:
+      summary: Update booking status
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Booking updated
+  /api/admin/analytics:
+    get:
+      summary: Admin analytics dashboard data
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Analytics payload
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

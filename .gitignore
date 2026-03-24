@@ -1,0 +1,29 @@
+# Dependencies
+**/node_modules/
+
+# Build artifacts
+**/.next/
+**/out/
+**/dist/
+**/build/
+**/*.tsbuildinfo
+
+# Environment and secrets
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.local.example
+**/.internal-key.txt
+**/*.pem
+**/*.key
+**/*.crt
+
+# Logs
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
