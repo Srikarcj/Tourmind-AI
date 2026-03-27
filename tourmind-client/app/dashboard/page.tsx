@@ -12,6 +12,8 @@ import { Booking, Recommendation } from "@/lib/types";
 const isAuthErrorMessage = (message: string) =>
   /invalid or expired token|missing bearer token|unauthorized|session expired/i.test(message);
 
+const isSessionExpiredMessage = (message: string) => /session expired/i.test(message);
+
 const isServiceUnavailableMessage = (message: string) =>
   /database is currently unavailable|temporarily unavailable|service unavailable|database.*offline/i.test(message);
 
@@ -21,6 +23,9 @@ const isApiUnavailableMessage = (message: string) =>
   );
 
 const DASHBOARD_FETCH_THROTTLE_MS = 5000;
+
+const API_AUTH_MISMATCH_MESSAGE =
+  "Your login is active, but the API rejected this token. In deployment, make sure frontend and backend Supabase env keys point to the same project.";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -75,27 +80,29 @@ export default function DashboardPage() {
         } catch (bookingError) {
           const message = bookingError instanceof Error ? bookingError.message : "Unable to load your bookings.";
 
-          if (active && isAuthErrorMessage(message)) {
-            lastFetchRef.current = { userId: null, at: 0 };
-            await signOut();
-            router.replace("/auth");
-            return;
+          if (isAuthErrorMessage(message)) {
+            if (active) {
+              setBookings([]);
+              setRecommendations([]);
+            }
+            nextError = API_AUTH_MISMATCH_MESSAGE;
+            skipRecommendations = true;
           }
 
-          if (isServiceUnavailableMessage(message)) {
+          if (!nextError && isServiceUnavailableMessage(message)) {
             if (active) {
               setBookings([]);
             }
             nextError = "Booking features are temporarily unavailable while database connectivity is down.";
             skipRecommendations = true;
-          } else if (isApiUnavailableMessage(message)) {
+          } else if (!nextError && isApiUnavailableMessage(message)) {
             if (active) {
               setBookings([]);
               setRecommendations([]);
             }
             nextError = "TourMind API is currently unreachable. Please make sure the backend server is running.";
             skipRecommendations = true;
-          } else {
+          } else if (!nextError) {
             nextError = message;
           }
         }
@@ -110,14 +117,11 @@ export default function DashboardPage() {
             const message =
               recommendationError instanceof Error ? recommendationError.message : "Unable to load recommendations.";
 
-            if (active && isAuthErrorMessage(message)) {
-              lastFetchRef.current = { userId: null, at: 0 };
-              await signOut();
-              router.replace("/auth");
-              return;
-            }
-
-            if (!nextError) {
+            if (isAuthErrorMessage(message)) {
+              if (!nextError) {
+                nextError = API_AUTH_MISMATCH_MESSAGE;
+              }
+            } else if (!nextError) {
               nextError = message;
             }
           }
@@ -129,7 +133,7 @@ export default function DashboardPage() {
       } catch (fetchError) {
         const message = fetchError instanceof Error ? fetchError.message : "Unable to load your dashboard.";
 
-        if (active && isAuthErrorMessage(message)) {
+        if (active && isSessionExpiredMessage(message)) {
           lastFetchRef.current = { userId: null, at: 0 };
           await signOut();
           router.replace("/auth");
@@ -137,7 +141,7 @@ export default function DashboardPage() {
         }
 
         if (active) {
-          setError(message);
+          setError(isAuthErrorMessage(message) ? API_AUTH_MISMATCH_MESSAGE : message);
         }
       } finally {
         if (active) {
