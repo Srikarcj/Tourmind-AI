@@ -23,7 +23,7 @@ import {
 } from "./types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-const API_REQUEST_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_API_TIMEOUT_MS || 12000);
+const API_REQUEST_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_API_TIMEOUT_MS || 2800);
 
 const API_UNREACHABLE_MESSAGE =
   "Cannot connect to the TourMind API. Make sure tourmind-api is running on http://localhost:5000.";
@@ -48,7 +48,7 @@ const isAbortError = (error: unknown) =>
   (error instanceof DOMException && error.name === "AbortError") ||
   /aborted|aborterror/i.test(error instanceof Error ? error.message : "");
 
-const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retries = 2): Promise<Response> => {
+const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retries = 1, timeoutMs = API_REQUEST_TIMEOUT_MS): Promise<Response> => {
   if (Date.now() < apiUnavailableUntil) {
     throw new Error(apiUnavailableReason === "service" ? API_SERVICE_UNAVAILABLE_MESSAGE : API_UNREACHABLE_MESSAGE);
   }
@@ -62,7 +62,7 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
 
   while (attempt <= effectiveRetries) {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), API_REQUEST_TIMEOUT_MS);
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
     try {
       const response = await fetch(input, {
@@ -387,7 +387,7 @@ export const fetchUserBookings = async (token: string): Promise<Booking[]> => {
   const response = await fetchWithRetry(`${API_URL}/api/bookings/user`, {
     headers: withAuth(token),
     cache: "no-store"
-  });
+  }, 0, 2800);
 
   const payload = await parseResponse<{ data: Booking[] }>(response);
   return payload.data;
@@ -502,7 +502,7 @@ export const fetchRecommendations = async (
   const response = await fetchWithRetry(url, {
     headers: withAuth(token),
     cache: "no-store"
-  });
+  }, 0, 2800);
 
   const payload = await parseResponse<{ data: Recommendation[] }>(response);
   return payload.data;
@@ -615,7 +615,7 @@ export const fetchNotifications = async (token: string, limit = 50): Promise<Not
   const response = await fetchWithRetry(url, {
     headers: withAuth(token),
     cache: "no-store"
-  });
+  }, 0, 2800);
 
   const payload = await parseResponse<{ data: NotificationItem[] }>(response);
   return payload.data;

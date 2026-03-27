@@ -21,6 +21,8 @@ type AuthContextValue = {
   getAccessToken: () => Promise<string | null>;
 };
 
+const AUTH_INIT_TIMEOUT_MS = 3000;
+
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -36,21 +38,44 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       return;
     }
 
+    let active = true;
     const supabase = getSupabaseClient();
+
+    const initTimeout = window.setTimeout(() => {
+      if (active) {
+        setLoading(false);
+      }
+    }, AUTH_INIT_TIMEOUT_MS);
 
     supabase.auth
       .getSession()
       .then(({ data }) => {
+        if (!active) {
+          return;
+        }
+
         setSession(data.session || null);
         setUser(data.session?.user || null);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (!active) {
+          return;
+        }
+
+        window.clearTimeout(initTimeout);
+        setLoading(false);
+      });
 
     const {
       data: { subscription }
     } = supabase.auth.onAuthStateChange((_event, updatedSession) => {
+      if (!active) {
+        return;
+      }
+
       setSession(updatedSession || null);
       setUser(updatedSession?.user || null);
+      setLoading(false);
 
       if (!updatedSession && pathname.startsWith("/dashboard")) {
         router.replace("/auth");
@@ -58,6 +83,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
 
     return () => {
+      active = false;
+      window.clearTimeout(initTimeout);
       subscription.unsubscribe();
     };
   }, [pathname, router]);
@@ -110,3 +137,4 @@ export const useAuth = () => {
   }
   return context;
 };
+

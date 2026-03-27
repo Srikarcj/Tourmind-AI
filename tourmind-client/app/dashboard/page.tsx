@@ -24,6 +24,7 @@ const isApiUnavailableMessage = (message: string) =>
 
 const DASHBOARD_FETCH_THROTTLE_MS = 5000;
 const AUTH_REDIRECT_GRACE_MS = 1200;
+const DASHBOARD_HARD_TIMEOUT_MS = 3000;
 
 const API_AUTH_MISMATCH_MESSAGE =
   "Your login is active, but the API rejected this token. In deployment, make sure frontend and backend Supabase env keys point to the same project.";
@@ -64,11 +65,20 @@ export default function DashboardPage() {
     lastFetchRef.current = { userId: user.id, at: now };
 
     let active = true;
+    let hardTimeout: number | null = null;
 
     const run = async () => {
       try {
         setFetching(true);
         setError("");
+
+        hardTimeout = window.setTimeout(() => {
+          if (active) {
+            setFetching(false);
+            setError(prev => prev || "Dashboard is taking longer than expected. Please refresh.");
+          }
+        }, DASHBOARD_HARD_TIMEOUT_MS);
+
         const token = await getAccessToken();
 
         if (!token) {
@@ -150,6 +160,10 @@ export default function DashboardPage() {
           setError(isAuthErrorMessage(message) ? API_AUTH_MISMATCH_MESSAGE : message);
         }
       } finally {
+        if (hardTimeout) {
+          window.clearTimeout(hardTimeout);
+        }
+
         if (active) {
           setFetching(false);
         }
@@ -160,6 +174,9 @@ export default function DashboardPage() {
 
     return () => {
       active = false;
+      if (hardTimeout) {
+        window.clearTimeout(hardTimeout);
+      }
     };
   }, [getAccessToken, loading, router, signOut, user]);
 
