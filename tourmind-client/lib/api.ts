@@ -23,9 +23,11 @@ import {
 } from "./types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_REQUEST_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_API_TIMEOUT_MS || 12000);
 
 const API_UNREACHABLE_MESSAGE =
   "Cannot connect to the TourMind API. Make sure tourmind-api is running on http://localhost:5000.";
+const API_TIMEOUT_MESSAGE = "TourMind API request timed out. Please try again.";
 
 const API_SERVICE_UNAVAILABLE_MESSAGE =
   "Some TourMind features are temporarily unavailable while the database is offline. Please try again shortly.";
@@ -42,6 +44,10 @@ const isNetworkError = (error: unknown) => {
   return /failed to fetch|fetch failed|networkerror|network request failed|err_connection_refused/i.test(message);
 };
 
+const isAbortError = (error: unknown) =>
+  (error instanceof DOMException && error.name === "AbortError") ||
+  /aborted|aborterror/i.test(error instanceof Error ? error.message : "");
+
 const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retries = 2): Promise<Response> => {
   if (Date.now() < apiUnavailableUntil) {
     throw new Error(apiUnavailableReason === "service" ? API_SERVICE_UNAVAILABLE_MESSAGE : API_UNREACHABLE_MESSAGE);
@@ -55,8 +61,14 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
   let lastError: unknown = null;
 
   while (attempt <= effectiveRetries) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), API_REQUEST_TIMEOUT_MS);
+
     try {
-      const response = await fetch(input, init);
+      const response = await fetch(input, {
+        ...init,
+        signal: controller.signal
+      });
 
       if (response.status === 503) {
         apiUnavailableReason = "service";
@@ -79,6 +91,12 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
       lastError = error;
 
       if (attempt >= effectiveRetries) {
+        if (isAbortError(error)) {
+          apiUnavailableReason = "network";
+          apiUnavailableUntil = Date.now() + 5000;
+          throw new Error(API_TIMEOUT_MESSAGE);
+        }
+
         if (isNetworkError(error)) {
           apiUnavailableReason = "network";
           apiUnavailableUntil = Date.now() + 5000;
@@ -90,6 +108,8 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
 
       await sleep(250 * (attempt + 1));
       attempt += 1;
+    } finally {
+      clearTimeout(timeout);
     }
   }
 
@@ -755,3 +775,4 @@ export const chatAssistant = async (body: {
   const payload = await parseResponse<{ data: ChatAssistantResponse }>(response);
   return payload.data;
 };
+

@@ -23,6 +23,7 @@ const isApiUnavailableMessage = (message: string) =>
   );
 
 const DASHBOARD_FETCH_THROTTLE_MS = 5000;
+const AUTH_REDIRECT_GRACE_MS = 1200;
 
 const API_AUTH_MISMATCH_MESSAGE =
   "Your login is active, but the API rejected this token. In deployment, make sure frontend and backend Supabase env keys point to the same project.";
@@ -37,14 +38,19 @@ export default function DashboardPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    if (!loading && !user) {
-      lastFetchRef.current = { userId: null, at: 0 };
-      router.replace("/auth");
+    if (loading) {
       return;
     }
 
     if (!user) {
-      return;
+      const timeout = window.setTimeout(() => {
+        lastFetchRef.current = { userId: null, at: 0 };
+        router.replace("/auth");
+      }, AUTH_REDIRECT_GRACE_MS);
+
+      return () => {
+        window.clearTimeout(timeout);
+      };
     }
 
     const now = Date.now();
@@ -219,3 +225,4 @@ export default function DashboardPage() {
     </div>
   );
 }
+
