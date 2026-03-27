@@ -23,7 +23,29 @@ import {
 } from "./types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-const API_REQUEST_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_API_TIMEOUT_MS || 2800);
+const parseTimeoutMs = (
+  rawValue: string | undefined,
+  fallbackMs: number,
+  minMs = 1000,
+  maxMs = 120000
+): number => {
+  const parsed = Number(rawValue);
+
+  if (!Number.isFinite(parsed)) {
+    return fallbackMs;
+  }
+
+  const normalized = Math.trunc(parsed);
+  if (normalized < minMs) {
+    return fallbackMs;
+  }
+
+  return Math.min(normalized, maxMs);
+};
+
+const API_DEFAULT_TIMEOUT_MS = parseTimeoutMs(process.env.NEXT_PUBLIC_API_TIMEOUT_MS, 12000);
+const API_QUICK_TIMEOUT_MS = parseTimeoutMs(process.env.NEXT_PUBLIC_API_QUICK_TIMEOUT_MS, 8000);
+const API_AI_TIMEOUT_MS = parseTimeoutMs(process.env.NEXT_PUBLIC_API_AI_TIMEOUT_MS, 45000, 5000, 180000);
 
 const API_UNREACHABLE_MESSAGE =
   "Cannot connect to the TourMind API. Make sure tourmind-api is running on http://localhost:5000.";
@@ -31,11 +53,6 @@ const API_TIMEOUT_MESSAGE = "TourMind API request timed out. Please try again.";
 
 const API_SERVICE_UNAVAILABLE_MESSAGE =
   "Some TourMind features are temporarily unavailable while the database is offline. Please try again shortly.";
-
-type ApiUnavailableReason = "network" | "service";
-
-let apiUnavailableUntil = 0;
-let apiUnavailableReason: ApiUnavailableReason = "network";
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -48,11 +65,12 @@ const isAbortError = (error: unknown) =>
   (error instanceof DOMException && error.name === "AbortError") ||
   /aborted|aborterror/i.test(error instanceof Error ? error.message : "");
 
-const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retries = 1, timeoutMs = API_REQUEST_TIMEOUT_MS): Promise<Response> => {
-  if (Date.now() < apiUnavailableUntil) {
-    throw new Error(apiUnavailableReason === "service" ? API_SERVICE_UNAVAILABLE_MESSAGE : API_UNREACHABLE_MESSAGE);
-  }
-
+const fetchWithRetry = async (
+  input: RequestInfo | URL,
+  init?: RequestInit,
+  retries = 1,
+  timeoutMs = API_DEFAULT_TIMEOUT_MS
+): Promise<Response> => {
   const method = String(init?.method || "GET").toUpperCase();
   const isIdempotentRequest = ["GET", "HEAD", "OPTIONS"].includes(method);
   const effectiveRetries = isIdempotentRequest ? retries : 0;
@@ -69,11 +87,6 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
         ...init,
         signal: controller.signal
       });
-
-      if (response.status === 503) {
-        apiUnavailableReason = "service";
-        apiUnavailableUntil = Date.now() + 30000;
-      }
 
       if (
         response.status >= 500 &&
@@ -92,14 +105,10 @@ const fetchWithRetry = async (input: RequestInfo | URL, init?: RequestInit, retr
 
       if (attempt >= effectiveRetries) {
         if (isAbortError(error)) {
-          apiUnavailableReason = "network";
-          apiUnavailableUntil = Date.now() + 5000;
           throw new Error(API_TIMEOUT_MESSAGE);
         }
 
         if (isNetworkError(error)) {
-          apiUnavailableReason = "network";
-          apiUnavailableUntil = Date.now() + 5000;
           throw new Error(API_UNREACHABLE_MESSAGE);
         }
 
@@ -217,7 +226,7 @@ export const discoverPlace = async (body: { stateSlug: string; query: string }):
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: Place }>(response);
   return payload.data;
@@ -283,7 +292,7 @@ export const generateTripPlan = async (body: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: TripResponse }>(response);
   return payload.data;
@@ -305,7 +314,7 @@ const runTripAction = async (
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: TripResponse }>(response);
   return payload.data;
@@ -343,7 +352,7 @@ export const exportTripItineraryEmail = async (token: string, body: { location: 
       ...withAuth(token)
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: { success: boolean } }>(response);
   return payload.data;
@@ -363,7 +372,12 @@ export const fetchServices = async (type?: "hotel" | "travel"): Promise<Service[
 export const createBooking = async (
   token: string,
   body: {
-    serviceId: string;
+    serviceId?: string;
+    serviceType?: "hotel" | "travel";
+    placeId?: string;
+    placeName?: string;
+    stateName?: string;
+    districtName?: string;
     startDate: string;
     endDate: string;
     guests: number;
@@ -387,7 +401,7 @@ export const fetchUserBookings = async (token: string): Promise<Booking[]> => {
   const response = await fetchWithRetry(`${API_URL}/api/bookings/user`, {
     headers: withAuth(token),
     cache: "no-store"
-  }, 0, 2800);
+  }, 0, API_QUICK_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: Booking[] }>(response);
   return payload.data;
@@ -502,7 +516,7 @@ export const fetchRecommendations = async (
   const response = await fetchWithRetry(url, {
     headers: withAuth(token),
     cache: "no-store"
-  }, 0, 2800);
+  }, 0, API_QUICK_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: Recommendation[] }>(response);
   return payload.data;
@@ -615,7 +629,7 @@ export const fetchNotifications = async (token: string, limit = 50): Promise<Not
   const response = await fetchWithRetry(url, {
     headers: withAuth(token),
     cache: "no-store"
-  }, 0, 2800);
+  }, 0, API_QUICK_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: NotificationItem[] }>(response);
   return payload.data;
@@ -679,7 +693,7 @@ export const generateAdvancedTrip = async (body: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: AdvancedTripResponse }>(response);
   return payload.data;
@@ -705,7 +719,7 @@ export const optimizeRouteOrder = async (body: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: OptimizedRouteResult }>(response);
   return payload.data;
@@ -725,7 +739,7 @@ export const estimateBudget = async (body: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: BudgetEstimate }>(response);
   return payload.data;
@@ -770,9 +784,8 @@ export const chatAssistant = async (body: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(body)
-  });
+  }, 0, API_AI_TIMEOUT_MS);
 
   const payload = await parseResponse<{ data: ChatAssistantResponse }>(response);
   return payload.data;
 };
-

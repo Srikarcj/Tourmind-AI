@@ -1,130 +1,96 @@
 "use client";
 
-import { Session, User } from "@supabase/supabase-js";
+import { useAuth as useClerkAuth, useUser } from "@clerk/nextjs";
 import { usePathname, useRouter } from "next/navigation";
-import {
-  createContext,
-  ReactNode,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState
-} from "react";
-import { getSupabaseClient, hasSupabaseClientConfig } from "@/lib/supabase";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo } from "react";
+
+type AuthUser = {
+  id: string;
+  email: string;
+  name: string | null;
+};
 
 type AuthContextValue = {
-  user: User | null;
-  session: Session | null;
+  user: AuthUser | null;
+  session: { userId: string | null } | null;
   loading: boolean;
   signOut: () => Promise<void>;
   getAccessToken: () => Promise<string | null>;
 };
 
-const AUTH_INIT_TIMEOUT_MS = 3000;
-
 const AuthContext = createContext<AuthContextValue | null>(null);
 
+const normalizeName = (firstName?: string | null, lastName?: string | null, username?: string | null) => {
+  const fullName = [firstName || "", lastName || ""].join(" ").trim();
+  return fullName || username || null;
+};
+
+const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<User | null>(null);
-  const [session, setSession] = useState<Session | null>(null);
-  const [loading, setLoading] = useState(true);
   const pathname = usePathname();
   const router = useRouter();
+  const { isLoaded, isSignedIn, getToken, signOut: clerkSignOut, userId } = useClerkAuth();
+  const { user: clerkUser, isLoaded: isUserLoaded } = useUser();
 
-  useEffect(() => {
-    if (!hasSupabaseClientConfig) {
-      setLoading(false);
-      return;
-    }
+  // When signed in, wait for Clerk user payload to avoid auth redirect flicker loops.
+  const loading = !isLoaded || (Boolean(isSignedIn) && !isUserLoaded);
 
-    let active = true;
-    const supabase = getSupabaseClient();
-
-    const initTimeout = window.setTimeout(() => {
-      if (active) {
-        setLoading(false);
-      }
-    }, AUTH_INIT_TIMEOUT_MS);
-
-    supabase.auth
-      .getSession()
-      .then(({ data }) => {
-        if (!active) {
-          return;
-        }
-
-        setSession(data.session || null);
-        setUser(data.session?.user || null);
-      })
-      .finally(() => {
-        if (!active) {
-          return;
-        }
-
-        window.clearTimeout(initTimeout);
-        setLoading(false);
-      });
-
-    const {
-      data: { subscription }
-    } = supabase.auth.onAuthStateChange((_event, updatedSession) => {
-      if (!active) {
-        return;
-      }
-
-      setSession(updatedSession || null);
-      setUser(updatedSession?.user || null);
-      setLoading(false);
-
-      if (!updatedSession && pathname.startsWith("/dashboard")) {
-        router.replace("/auth");
-      }
-    });
-
-    return () => {
-      active = false;
-      window.clearTimeout(initTimeout);
-      subscription.unsubscribe();
-    };
-  }, [pathname, router]);
-
-  const signOut = useCallback(async () => {
-    if (!hasSupabaseClientConfig) {
-      return;
-    }
-
-    const supabase = getSupabaseClient();
-    await supabase.auth.signOut();
-  }, []);
-
-  const getAccessToken = useCallback(async () => {
-    if (!hasSupabaseClientConfig) {
+  const user = useMemo<AuthUser | null>(() => {
+    if (!isLoaded || !isSignedIn || !userId) {
       return null;
     }
 
-    const supabase = getSupabaseClient();
-    const { data } = await supabase.auth.getSession();
-    let activeSession = data.session || null;
+    return {
+      id: userId,
+      email: clerkUser?.primaryEmailAddress?.emailAddress || "",
+      name: normalizeName(clerkUser?.firstName, clerkUser?.lastName, clerkUser?.username)
+    };
+  }, [clerkUser, isLoaded, isSignedIn, userId]);
 
-    // Keep API calls from using an expired JWT and triggering avoidable 401s.
-    if (activeSession?.expires_at && activeSession.expires_at * 1000 <= Date.now() + 30_000) {
-      const { data: refreshedData } = await supabase.auth.refreshSession();
-      activeSession = refreshedData.session || null;
+  useEffect(() => {
+    if (loading) {
+      return;
     }
 
-    return activeSession?.access_token || null;
-  }, []);
+    if (!isSignedIn && pathname.startsWith("/dashboard")) {
+      router.replace("/auth");
+    }
+  }, [isSignedIn, loading, pathname, router]);
+
+  const signOut = useCallback(async () => {
+    await clerkSignOut();
+  }, [clerkSignOut]);
+
+  const getAccessToken = useCallback(async () => {
+    if (!isLoaded || !isSignedIn) {
+      return null;
+    }
+
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      const token = await getToken({
+        skipCache: attempt > 0
+      });
+
+      if (token) {
+        return token;
+      }
+
+      await wait(140 * (attempt + 1));
+    }
+
+    return null;
+  }, [getToken, isLoaded, isSignedIn]);
 
   const value = useMemo<AuthContextValue>(
     () => ({
       user,
-      session,
+      session: { userId: userId || null },
       loading,
       signOut,
       getAccessToken
     }),
-    [getAccessToken, loading, session, signOut, user]
+    [getAccessToken, loading, signOut, user, userId]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
@@ -137,4 +103,3 @@ export const useAuth = () => {
   }
   return context;
 };
-

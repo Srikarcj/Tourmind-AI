@@ -75,7 +75,7 @@ export default function HomePage() {
   const pulseTrack = useMemo(() => [...pulseBadges, ...pulseBadges], []);
 
   return (
-    <div className="flex w-full flex-col gap-10 px-4 py-10 sm:px-6 lg:px-10 2xl:px-14">
+    <div className="flex w-full flex-col gap-10 px-4 pb-10 pt-4 sm:px-6 sm:pt-6 lg:px-10 2xl:px-14">
       <motion.section
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}

@@ -13,6 +13,7 @@ const isAuthErrorMessage = (message: string) =>
   /invalid or expired token|missing bearer token|unauthorized|session expired/i.test(message);
 
 const isSessionExpiredMessage = (message: string) => /session expired/i.test(message);
+const isTimeoutMessage = (message: string) => /timed out/i.test(message);
 
 const isServiceUnavailableMessage = (message: string) =>
   /database is currently unavailable|temporarily unavailable|service unavailable|database.*offline/i.test(message);
@@ -29,9 +30,12 @@ const DASHBOARD_HARD_TIMEOUT_MS = 3000;
 const API_AUTH_MISMATCH_MESSAGE =
   "Your login is active, but the API rejected this token. In deployment, make sure frontend and backend Supabase env keys point to the same project.";
 
+const AUTH_TOKEN_STILL_LOADING_MESSAGE =
+  "Signed in successfully. Finalizing secure session token...";
+
 export default function DashboardPage() {
   const router = useRouter();
-  const { user, loading, getAccessToken, signOut } = useAuth();
+  const { user, loading, getAccessToken } = useAuth();
   const lastFetchRef = useRef<{ userId: string | null; at: number }>({ userId: null, at: 0 });
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
@@ -57,7 +61,6 @@ export default function DashboardPage() {
     const now = Date.now();
     const isSameUser = lastFetchRef.current.userId === user.id;
 
-    // Guard against repeated effect runs in development Strict Mode and unstable deps.
     if (isSameUser && now - lastFetchRef.current.at < DASHBOARD_FETCH_THROTTLE_MS) {
       return;
     }
@@ -75,14 +78,18 @@ export default function DashboardPage() {
         hardTimeout = window.setTimeout(() => {
           if (active) {
             setFetching(false);
-            setError(prev => prev || "Dashboard is taking longer than expected. Please refresh.");
           }
         }, DASHBOARD_HARD_TIMEOUT_MS);
 
         const token = await getAccessToken();
 
         if (!token) {
-          throw new Error("Session expired. Please sign in again.");
+          if (active) {
+            setBookings([]);
+            setRecommendations([]);
+            setError(AUTH_TOKEN_STILL_LOADING_MESSAGE);
+          }
+          return;
         }
 
         let nextError = "";
@@ -96,29 +103,32 @@ export default function DashboardPage() {
         } catch (bookingError) {
           const message = bookingError instanceof Error ? bookingError.message : "Unable to load your bookings.";
 
-          if (isAuthErrorMessage(message)) {
+          if (isTimeoutMessage(message)) {
+            if (active) {
+              setBookings([]);
+            }
+            skipRecommendations = true;
+          } else if (isAuthErrorMessage(message)) {
             if (active) {
               setBookings([]);
               setRecommendations([]);
             }
             nextError = API_AUTH_MISMATCH_MESSAGE;
             skipRecommendations = true;
-          }
-
-          if (!nextError && isServiceUnavailableMessage(message)) {
+          } else if (isServiceUnavailableMessage(message)) {
             if (active) {
               setBookings([]);
             }
             nextError = "Booking features are temporarily unavailable while database connectivity is down.";
             skipRecommendations = true;
-          } else if (!nextError && isApiUnavailableMessage(message)) {
+          } else if (isApiUnavailableMessage(message)) {
             if (active) {
               setBookings([]);
               setRecommendations([]);
             }
             nextError = "TourMind API is currently unreachable. Please make sure the backend server is running.";
             skipRecommendations = true;
-          } else if (!nextError) {
+          } else {
             nextError = message;
           }
         }
@@ -133,7 +143,9 @@ export default function DashboardPage() {
             const message =
               recommendationError instanceof Error ? recommendationError.message : "Unable to load recommendations.";
 
-            if (isAuthErrorMessage(message)) {
+            if (isTimeoutMessage(message)) {
+              // Suppress timeout message for smoother UX.
+            } else if (isAuthErrorMessage(message)) {
               if (!nextError) {
                 nextError = API_AUTH_MISMATCH_MESSAGE;
               }
@@ -150,14 +162,16 @@ export default function DashboardPage() {
         const message = fetchError instanceof Error ? fetchError.message : "Unable to load your dashboard.";
 
         if (active && isSessionExpiredMessage(message)) {
-          lastFetchRef.current = { userId: null, at: 0 };
-          await signOut();
-          router.replace("/auth");
+          setError(AUTH_TOKEN_STILL_LOADING_MESSAGE);
           return;
         }
 
         if (active) {
-          setError(isAuthErrorMessage(message) ? API_AUTH_MISMATCH_MESSAGE : message);
+          if (isTimeoutMessage(message)) {
+            setError("");
+          } else {
+            setError(isAuthErrorMessage(message) ? API_AUTH_MISMATCH_MESSAGE : message);
+          }
         }
       } finally {
         if (hardTimeout) {
@@ -178,7 +192,7 @@ export default function DashboardPage() {
         window.clearTimeout(hardTimeout);
       }
     };
-  }, [getAccessToken, loading, router, signOut, user]);
+  }, [getAccessToken, loading, router, user]);
 
   return (
     <div className="w-full space-y-6 px-4 py-10 sm:px-6 lg:px-10 2xl:px-14">
@@ -242,4 +256,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-

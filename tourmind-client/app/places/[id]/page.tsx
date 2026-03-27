@@ -3,15 +3,21 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
-import { fetchPlace, savePlace, trackPlaceViewed } from "@/lib/api";
-import { Place } from "@/lib/types";
+import BookingModal from "@/components/BookingModal";
+import { createBooking, fetchPlace, savePlace, trackPlaceViewed } from "@/lib/api";
+import { Place, ServiceType } from "@/lib/types";
 
 const MapSingle = dynamic(() => import("@/components/MapSingle"), {
   ssr: false,
   loading: () => <p className="text-sm text-base/70">Loading map...</p>
 });
+
+const bookingTypeOptions: Array<{ value: ServiceType; label: string }> = [
+  { value: "travel", label: "Travel Assistance" },
+  { value: "hotel", label: "Stay Assistance" }
+];
 
 export default function PlaceDetailsPage() {
   const params = useParams<{ id: string }>();
@@ -20,8 +26,12 @@ export default function PlaceDetailsPage() {
 
   const [place, setPlace] = useState<Place | null>(null);
   const [loading, setLoading] = useState(true);
+  const [pageError, setPageError] = useState("");
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
+  const [bookingType, setBookingType] = useState<ServiceType>("travel");
+  const [bookingModalOpen, setBookingModalOpen] = useState(false);
+  const [submittingBooking, setSubmittingBooking] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -45,7 +55,7 @@ export default function PlaceDetailsPage() {
         }
       } catch (err) {
         if (active) {
-          setError(err instanceof Error ? err.message : "Unable to load place");
+          setPageError(err instanceof Error ? err.message : "Unable to load place");
         }
       } finally {
         if (active) {
@@ -60,6 +70,24 @@ export default function PlaceDetailsPage() {
       active = false;
     };
   }, [getAccessToken, id, user]);
+
+  const modalService = useMemo(() => {
+    if (!place || !bookingModalOpen) {
+      return null;
+    }
+
+    const location = place.districtName ? `${place.districtName}, ${place.stateName}` : place.stateName;
+
+    return {
+      id: `place-${place.id}-${bookingType}`,
+      name: bookingType === "hotel" ? `${place.name} Stay Assistance` : `${place.name} Travel Assistance`,
+      location,
+      priceRange: "On request",
+      type: bookingType,
+      contactInfo: "TourMind Internal Operations",
+      createdAt: new Date().toISOString()
+    };
+  }, [bookingModalOpen, bookingType, place]);
 
   const handleSave = async () => {
     if (!place) {
@@ -81,14 +109,60 @@ export default function PlaceDetailsPage() {
     }
   };
 
+  const handleBookNowClick = () => {
+    if (!user) {
+      setNotice("Sign in to submit a booking request.");
+      return;
+    }
+
+    setBookingModalOpen(true);
+  };
+
+  const handleBookingSubmit = async (payload: { startDate: string; endDate: string; guests: number }) => {
+    if (!place) {
+      return;
+    }
+
+    try {
+      setSubmittingBooking(true);
+      setError("");
+      setNotice("");
+
+      const token = await getAccessToken();
+      if (!token) {
+        setError("Your session expired. Please sign in again.");
+        return;
+      }
+
+      await createBooking(token, {
+        serviceType: bookingType,
+        placeId: place.id,
+        placeName: place.name,
+        stateName: place.stateName,
+        districtName: place.districtName,
+        startDate: payload.startDate,
+        endDate: payload.endDate,
+        guests: payload.guests,
+        userNote: `Place request: ${place.name}, ${place.stateName}`
+      });
+
+      setBookingModalOpen(false);
+      setNotice(`Booking request submitted for ${place.name}. You can track status in Dashboard.`);
+    } catch (bookingError) {
+      setError(bookingError instanceof Error ? bookingError.message : "Booking request failed.");
+    } finally {
+      setSubmittingBooking(false);
+    }
+  };
+
   if (loading) {
     return <div className="w-full px-4 py-10 text-sm text-base/70">Loading place details...</div>;
   }
 
-  if (error || !place) {
+  if (pageError || !place) {
     return (
       <div className="w-full px-4 py-10">
-        <p className="text-sm text-red-700">{error || "Place not found"}</p>
+        <p className="text-sm text-red-700">{pageError || "Place not found"}</p>
       </div>
     );
   }
@@ -106,6 +180,7 @@ export default function PlaceDetailsPage() {
       </section>
 
       {notice && <p className="rounded-xl border border-emerald-300 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">{notice}</p>}
+      {error && <p className="rounded-xl border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-700">{error}</p>}
 
       <section className="grid gap-4 sm:grid-cols-2">
         <article className="rounded-2xl border border-base/15 bg-white p-5 shadow-soft">
@@ -137,12 +212,36 @@ export default function PlaceDetailsPage() {
       </section>
 
       <section className="rounded-2xl border border-base/15 bg-white p-5 shadow-soft">
-        <h2 className="text-lg font-semibold text-base">Internal TourMind Booking</h2>
+        <h2 className="text-lg font-semibold text-base">Book This Place</h2>
         <p className="mt-2 text-sm text-base/75">
-          Create your booking request directly in TourMind. Your request will be handled by your internal admin workflow.
+          Your booking is now created against this exact place. No unrelated route/service will be used.
         </p>
+
+        <div className="mt-4 max-w-sm">
+          <label className="text-sm font-medium text-base/80">
+            Booking Type
+            <select
+              value={bookingType}
+              onChange={event => setBookingType(event.target.value as ServiceType)}
+              className="mt-1 w-full rounded-xl border border-base/20 bg-white/90 px-3 py-2 text-sm outline-none ring-accent focus:ring-2"
+            >
+              {bookingTypeOptions.map(option => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
         <div className="mt-4 flex flex-wrap gap-3">
-          <Link href="/bookings" className="rounded-full bg-base px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent">Request Booking</Link>
+          <button
+            type="button"
+            onClick={handleBookNowClick}
+            className="rounded-full bg-base px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent"
+          >
+            {user ? "Book This Place" : "Sign In to Book"}
+          </button>
           <button
             type="button"
             onClick={handleSave}
@@ -152,8 +251,18 @@ export default function PlaceDetailsPage() {
           </button>
         </div>
       </section>
+
+      <BookingModal
+        service={modalService}
+        open={Boolean(modalService)}
+        busy={submittingBooking}
+        onClose={() => {
+          if (!submittingBooking) {
+            setBookingModalOpen(false);
+          }
+        }}
+        onSubmit={handleBookingSubmit}
+      />
     </div>
   );
 }
-
-

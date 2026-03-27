@@ -370,7 +370,12 @@ export const initializeDatabase = async () => {
       throw new Error(`Database schema check failed: ${countError.message}`);
     }
 
-    const shouldSeedTourism = env.DB_SYNC_ON_STARTUP || statesCount === 0 || placesCount === 0;
+    const MIN_EXPECTED_STATE_COUNT = 36;
+    const MIN_EXPECTED_PLACE_COUNT = 140;
+    const shouldSeedTourism =
+      env.DB_SYNC_ON_STARTUP ||
+      statesCount < MIN_EXPECTED_STATE_COUNT ||
+      placesCount < MIN_EXPECTED_PLACE_COUNT;
     const shouldSeedServices = env.DB_SYNC_ON_STARTUP || servicesCount === 0;
 
     if (shouldSeedTourism) {
@@ -415,5 +420,7 @@ export const closeDatabase = async () => {
     await pool.end();
   }
 };
+
+
 
 

@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { ApiError } from "../lib/apiError.js";
 import { dbQuery, isDbEnabled } from "../lib/db.js";
 import { getServiceDataset } from "../lib/dataset.js";
@@ -53,6 +54,82 @@ const toDatasetService = row => ({
   createdAt: new Date(0).toISOString()
 });
 
+const UUID_PATTERN =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+const formatUuidFromHex = hex => {
+  const normalized = String(hex || "").toLowerCase().padEnd(32, "0").slice(0, 32);
+  const variantNibble = ((parseInt(normalized[16] || "0", 16) & 0x3) | 0x8).toString(16);
+
+  return `${normalized.slice(0, 8)}-${normalized.slice(8, 12)}-5${normalized.slice(13, 16)}-${variantNibble}${normalized.slice(17, 20)}-${normalized.slice(20, 32)}`;
+};
+
+const toStableUuid = seed => {
+  const input = String(seed || "").trim();
+  if (UUID_PATTERN.test(input)) {
+    return input.toLowerCase();
+  }
+
+  const digest = createHash("sha256").update(input).digest("hex");
+  return formatUuidFromHex(digest);
+};
+
+const normalizeServiceType = value => (String(value || "").trim().toLowerCase() === "hotel" ? "hotel" : "travel");
+
+const buildPlaceServiceDraft = ({ placeId, placeName, stateName, districtName, serviceType }) => {
+  const type = normalizeServiceType(serviceType);
+  const cleanPlaceName = String(placeName || "").trim() || "Place";
+  const cleanStateName = String(stateName || "").trim() || "Unknown State";
+  const cleanDistrictName = String(districtName || "").trim();
+
+  const location = cleanDistrictName ? `${cleanDistrictName}, ${cleanStateName}` : cleanStateName;
+  const serviceName =
+    type === "hotel"
+      ? `${cleanPlaceName} Stay Assistance`
+      : `${cleanPlaceName} Travel Assistance`;
+
+  return {
+    id: toStableUuid(`place-service:${type}:${String(placeId || "")}`),
+    name: serviceName,
+    location,
+    priceRange: "On request",
+    type,
+    contactInfo: "TourMind Internal Operations",
+    tags: ["place-booking", cleanStateName.toLowerCase(), cleanPlaceName.toLowerCase()],
+    popularityScore: 1
+  };
+};
+
+const ensurePlaceBackedService = async placeContext => {
+  const draft = buildPlaceServiceDraft(placeContext);
+
+  const result = await dbQuery(
+    `
+    INSERT INTO services (id, name, location, price_range, type, contact_info, tags, popularity_score)
+    VALUES ($1::uuid, $2, $3, $4, $5, $6, $7::jsonb, $8)
+    ON CONFLICT (id)
+    DO UPDATE SET
+      name = EXCLUDED.name,
+      location = EXCLUDED.location,
+      type = EXCLUDED.type,
+      tags = EXCLUDED.tags,
+      popularity_score = GREATEST(services.popularity_score, EXCLUDED.popularity_score)
+    RETURNING id, name, location, price_range, type, contact_info, created_at
+    `,
+    [
+      draft.id,
+      draft.name,
+      draft.location,
+      draft.priceRange,
+      draft.type,
+      draft.contactInfo,
+      JSON.stringify(draft.tags),
+      draft.popularityScore
+    ]
+  );
+
+  return result.rows[0] || null;
+};
 const getFallbackServices = async type => {
   const dataset = await getServiceDataset();
 
@@ -143,8 +220,28 @@ const getBookingById = async bookingId => {
   return result.rows[0] ? toBooking(result.rows[0]) : null;
 };
 
-export const createBooking = async ({ userId, serviceId, startDate, endDate, guests, userNote }) => {
-  const service = await getServiceById(serviceId);
+export const createBooking = async ({
+  userId,
+  serviceId,
+  startDate,
+  endDate,
+  guests,
+  userNote,
+  placeContext,
+  serviceType
+}) => {
+  let service = null;
+
+  if (serviceId) {
+    service = await getServiceById(serviceId);
+  }
+
+  if (!service && placeContext?.placeId && placeContext?.placeName && placeContext?.stateName) {
+    service = await ensurePlaceBackedService({
+      ...placeContext,
+      serviceType: serviceType || "travel"
+    });
+  }
 
   if (!service) {
     throw new ApiError(404, "Selected service does not exist.");
@@ -156,7 +253,7 @@ export const createBooking = async ({ userId, serviceId, startDate, endDate, gue
     VALUES ($1::uuid, $2::uuid, $3::date, $4::date, $5, 'pending', $6)
     RETURNING id
     `,
-    [userId, serviceId, startDate, endDate, guests, userNote || null]
+    [userId, service.id, startDate, endDate, guests, userNote || null]
   );
 
   const bookingId = insertResult.rows[0].id;
@@ -167,7 +264,11 @@ export const createBooking = async ({ userId, serviceId, startDate, endDate, gue
     newStatus: "pending",
     note: userNote || "Booking created",
     changedByEmail: null,
-    metadata: { source: "booking_create" }
+    metadata: {
+      source: placeContext?.placeId ? "place_booking_create" : "booking_create",
+      placeId: placeContext?.placeId || null,
+      placeName: placeContext?.placeName || null
+    }
   });
 
   const booking = await getBookingById(bookingId);
@@ -369,4 +470,5 @@ export const softDeleteBooking = async ({ bookingId, deletedByEmail }) => {
 };
 
 export const getBookingByIdDetails = getBookingById;
+
 

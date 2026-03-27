@@ -44,9 +44,19 @@ const validateBookingPayload = body => {
   const endDate = parseDate(body.endDate);
   const guests = Number(body.guests);
   const userNote = body.userNote ? String(body.userNote).trim() : "";
+  const serviceType = String(body.serviceType || "travel").trim().toLowerCase();
 
-  if (!serviceId) {
-    throw new ApiError(400, "serviceId is required.");
+  const placeId = String(body.placeId || "").trim();
+  const placeName = String(body.placeName || "").trim();
+  const stateName = String(body.stateName || "").trim();
+  const districtName = String(body.districtName || "").trim();
+
+  if (!serviceId && (!placeId || !placeName || !stateName)) {
+    throw new ApiError(400, "serviceId is required unless placeId/placeName/stateName are provided.");
+  }
+
+  if (!["hotel", "travel"].includes(serviceType)) {
+    throw new ApiError(400, "serviceType must be either hotel or travel.");
   }
 
   if (!startDate || !endDate) {
@@ -61,7 +71,22 @@ const validateBookingPayload = body => {
     throw new ApiError(400, "guests must be an integer between 1 and 20.");
   }
 
-  return { serviceId, startDate, endDate, guests, userNote: userNote || null };
+  return {
+    serviceId: serviceId || null,
+    startDate,
+    endDate,
+    guests,
+    userNote: userNote || null,
+    serviceType,
+    placeContext: placeId
+      ? {
+          placeId,
+          placeName,
+          stateName,
+          districtName: districtName || null
+        }
+      : null
+  };
 };
 
 const isAdminUser = authUser => (authUser?.email || "").toLowerCase() === env.ADMIN_EMAIL.toLowerCase();
@@ -105,7 +130,9 @@ router.post("/bookings/create", requireDatabase, requireAuth, async (req, res, n
       startDate: payload.startDate,
       endDate: payload.endDate,
       guests: payload.guests,
-      userNote: payload.userNote
+      userNote: payload.userNote,
+      serviceType: payload.serviceType,
+      placeContext: payload.placeContext
     });
 
     res.status(201).json({ data: booking });
@@ -255,5 +282,6 @@ router.delete("/bookings/:bookingId", requireDatabase, requireAuth, requireAdmin
 });
 
 export default router;
+
 
 
